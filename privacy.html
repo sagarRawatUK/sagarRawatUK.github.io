@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - LifeOne Habit & Streak Tracker</title>
+  <meta name="description" content="Privacy Policy for LifeOne - Habit & Streak Tracker. Learn how we respect your privacy with 100% offline local data storage.">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Custom Properties & Design Tokens */
+    :root {
+      --font-display: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      
+      /* Base Theme Colors (Light) */
+      --primary: #16392a;
+      --primary-hover: #1e4d39;
+      --primary-glow: rgba(22, 57, 42, 0.15);
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.2);
+      
+      --bg-base: #f4f7f5;
+      --bg-card: #ffffff;
+      --bg-glass: rgba(255, 255, 255, 0.75);
+      
+      --border: rgba(22, 57, 42, 0.08);
+      --border-focus: rgba(16, 185, 129, 0.4);
+      
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --text-light: #9ca3af;
+      --text-on-primary: #ffffff;
+      
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 10px 20px -5px rgba(22, 57, 42, 0.06), 0 4px 6px -2px rgba(22, 57, 42, 0.03);
+      --shadow-lg: 0 20px 25px -5px rgba(22, 57, 42, 0.1), 0 10px 10px -5px rgba(22, 57, 42, 0.04);
+      
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      
+      --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="dark"] {
+      /* Base Theme Colors (Dark) */
+      --primary: #2d5a45;
+      --primary-hover: #3b7459;
+      --primary-glow: rgba(45, 90, 69, 0.25);
+      --accent: #34d399;
+      --accent-glow: rgba(52, 211, 153, 0.3);
+      
+      --bg-base: #0b120f;
+      --bg-card: #121e18;
+      --bg-glass: rgba(18, 30, 24, 0.85);
+      
+      --border: rgba(52, 211, 153, 0.08);
+      --border-focus: rgba(52, 211, 153, 0.3);
+      
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-light: #64748b;
+      
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 10px 20px -5px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* CSS Reset & Global Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      line-height: 1.6;
+      transition: background-color var(--transition-normal), color var(--transition-normal);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Ambient background glows for premium look */
+    .bg-glow-1 {
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-glow-2 {
+      position: absolute;
+      bottom: 10%;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Container & Grid layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Navbar styling */
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      transition: background-color var(--transition-normal), border var(--transition-normal);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-logo {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: var(--font-display);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+    }
+
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-name span {
+      background: linear-gradient(to right, var(--accent), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform var(--transition-fast), background-color var(--transition-normal), border var(--transition-normal);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .theme-toggle-btn:hover {
+      transform: scale(1.08);
+      border-color: var(--accent);
+    }
+
+    .theme-toggle-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Hide element helper */
+    [data-theme="dark"] .sun-icon { display: block; }
+    [data-theme="dark"] .moon-icon { display: none; }
+    [data-theme="light"] .sun-icon { display: none; }
+    [data-theme="light"] .moon-icon { display: block; }
+
+    /* Hero section */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary-glow);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Content Layout grid */
+    .layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 48px;
+      padding-bottom: 100px;
+    }
+
+    /* Sidebar and TOC Navigation */
+    .sidebar {
+      position: sticky;
+      top: 120px;
+      height: fit-content;
+    }
+
+    .toc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .toc-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .toc-item a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color var(--transition-fast), padding var(--transition-fast);
+    }
+
+    .toc-item a::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--text-light);
+      transition: width var(--transition-fast), background var(--transition-fast), height var(--transition-fast);
+    }
+
+    .toc-item.active a,
+    .toc-item a:hover {
+      color: var(--accent);
+      padding-left: 4px;
+    }
+
+    .toc-item.active a::before {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    /* Main Policy Content */
+    .content-area {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .policy-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-focus);
+    }
+
+    .policy-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--primary), var(--accent));
+      opacity: 0.7;
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary-glow);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+
+    .card-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+
+    .policy-section-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-main);
+    }
+
+    .policy-card p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    .policy-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-card ul {
+      list-style: none;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .policy-card ul li {
+      position: relative;
+      padding-left: 28px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .policy-card ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    /* Interactive highlights */
+    .highlight-box {
+      background: var(--primary-glow);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .highlight-box-title {
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Footer styling */
+    footer {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 60px 0 40px;
+      position: relative;
+      z-index: 10;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .footer-logo {
+      background: #ffffff;
+      color: var(--primary);
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 18px;
+      font-family: var(--font-display);
+    }
+
+    .footer-brand-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color var(--transition-fast);
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .copyright {
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+
+    /* Interactive scroll to top button */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--accent);
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 14px var(--accent-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity var(--transition-normal), visibility var(--transition-normal), transform var(--transition-normal);
+      z-index: 99;
+    }
+
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+      background: #059669;
+      transform: translateY(-2px);
+    }
+
+    .scroll-top-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.5;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .sidebar {
+        display: none; /* Hide TOC on smaller screens */
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 60px 0 40px;
+      }
+      .hero-title {
+        font-size: 2rem;
+      }
+      .policy-card {
+        padding: 24px;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand">
+        <div class="brand-logo">L</div>
+        <span class="brand-name">Life<span>One</span></span>
+      </a>
+      <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark/light mode">
+        <!-- Moon Icon -->
+        <svg class="moon-icon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <!-- Sun Icon -->
+        <svg class="sun-icon" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">
+        <svg style="width:14px;height:14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        100% Privacy Focused
+      </div>
+      <h1 class="hero-title">Privacy Policy</h1>
+      <p class="hero-subtitle">Learn how LifeOne keeps your habit and streak data completely private and secure on your device.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="container">
+    <div class="layout">
+      
+      <!-- Sticky Sidebar -->
+      <aside class="sidebar">
+        <div class="toc-card">
+          <h2 class="toc-title">On This Page</h2>
+          <ul class="toc-list">
+            <li class="toc-item active" data-section="intro"><a href="#intro">Overview</a></li>
+            <li class="toc-item" data-section="data-collection"><a href="#data-collection">No Data Collection</a></li>
+            <li class="toc-item" data-section="storage"><a href="#storage">Local Data Storage</a></li>
+            <li class="toc-item" data-section="permissions"><a href="#permissions">App Permissions</a></li>
+            <li class="toc-item" data-section="portability"><a href="#portability">Data Portability</a></li>
+            <li class="toc-item" data-section="third-party"><a href="#third-party">Third Parties</a></li>
+            <li class="toc-item" data-section="contact"><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Policy Articles -->
+      <div class="content-area">
+        
+        <!-- Section: Overview -->
+        <article class="policy-card" id="intro">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">1. Overview</h2>
+          <p>Welcome to LifeOne! This Privacy Policy describes how we handle information in the LifeOne mobile application (the "App"). We built LifeOne as a habit and streak tracker with a core philosophy: <strong>your personal growth history is your business, not ours.</strong></p>
+          <p>Unlike traditional apps, LifeOne is designed to function entirely offline, operating directly on your device without transmitting data to external servers.</p>
+        </article>
+
+        <!-- Section: Data Collection -->
+        <article class="policy-card" id="data-collection">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"></path>
+              <circle cx="12" cy="11" r="3"></circle>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">2. No Account & No Data Collection</h2>
+          <p>We believe in absolute anonymity. LifeOne does not collect, process, upload, or transmit any personally identifiable information (PII). Here is what we do <strong>not</strong> collect:</p>
+          <ul>
+            <li>No registration or account creation is required (no usernames, passwords, or emails).</li>
+            <li>No name, email address, phone number, or demographic details.</li>
+            <li>No tracking code, telemetry, device identifiers, or IP addresses.</li>
+          </ul>
+          <div class="highlight-box">
+            <div class="highlight-box-title">
+              <svg style="width:16px;height:16px;color:var(--accent)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Did you know?
+            </div>
+            <p style="margin-bottom:0; font-size:0.95rem;">Because we do not have accounts or databases, we cannot view, modify, or sell any of your habits or completion logs. You are in complete control.</p>
+          </div>
+        </article>
+
+        <!-- Section: Storage -->
+        <article class="policy-card" id="storage">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">3. Local Data Storage</h2>
+          <p>All data generated in LifeOne remains strictly on your device. The App stores information in secure local sandboxed database directories using highly efficient Hive database technology. This includes:</p>
+          <ul>
+            <li>Your list of habits, categories, and custom emojis.</li>
+            <li>Your streak records, completion dates, and progress calendars.</li>
+            <li>Custom notifications, system preferences, and theme settings.</li>
+          </ul>
+          <p>This data is protected by the operating system’s standard application sandboxing. No third party (including ourselves) can access this directory under normal device conditions.</p>
+        </article>
+
+        <!-- Section: Permissions -->
+        <article class="policy-card" id="permissions">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">4. System Permissions</h2>
+          <p>LifeOne requests specific system permissions to deliver optional features. You can enable or disable these at any time via your device's settings:</p>
+          <ul>
+            <li><strong>Notifications:</strong> Used to display local reminders for habit check-ins (e.g., morning habits or evening check-in). These alerts are scheduled locally and do not involve remote push notification servers.</li>
+            <li><strong>Files / Storage (Optional):</strong> Used if you choose to manually restore backups from a backup file stored on your device.</li>
+          </ul>
+        </article>
+
+        <!-- Section: Portability -->
+        <article class="policy-card" id="portability">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <polyline points="16 3 21 3 21 8"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+              <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"></path>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">5. Data Control & Deletion</h2>
+          <p>Because your data is stored locally, you have absolute ownership and control to import, export, or delete it:</p>
+          <ul>
+            <li><strong>Exporting Data:</strong> You can export all your habit history and settings as a standard text-based JSON file to copy it to your clipboard. This allows you to paste the backup in a safe place.</li>
+            <li><strong>Importing Data:</strong> You can import a previously copied JSON backup from your clipboard to restore your habit configurations.</li>
+            <li><strong>Full Deletion:</strong> You can wipe all data by deleting individual habits inside the settings view, clearing the application's storage in your device settings, or uninstalling LifeOne. Once deleted, this information is gone forever and cannot be recovered.</li>
+          </ul>
+        </article>
+
+        <!-- Section: Third Parties -->
+        <article class="policy-card" id="third-party">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">6. Third-Party Interactions</h2>
+          <p>We do not integrate with third-party tracking software, advertising networks, or user profiling analytics. However, if you choose to share your achievements or streak charts via the native "Share" functionality in the app, this action will launch the standard sharing sheet of your device's operating system (iOS or Android) to pass the content to the app you select. We do not control or track where you share your data.</p>
+        </article>
+
+        <!-- Section: Contact -->
+        <article class="policy-card" id="contact">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h2 class="policy-section-title">7. Contact & Updates</h2>
+          <p>We may update this Privacy Policy from time to time to reflect modifications in our App. Any updates will be published within the App or via the distribution platform (Google Play Store or Apple App Store).</p>
+          <p>If you have any questions or feedback regarding our privacy practices, please contact us at:</p>
+          <p style="margin-top: 12px; font-weight: 600;">
+            Email: <a href="mailto:support@lifeone.app" style="color:var(--accent); text-decoration:none;">support@lifeone.app</a>
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-wrapper">
+      <a href="#" class="footer-brand">
+        <div class="footer-logo">L</div>
+        <span class="footer-brand-name">LifeOne</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="#intro">Overview</a></li>
+        <li><a href="#storage">Data Storage</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="mailto:support@lifeone.app">Support Contact</a></li>
+      </ul>
+      <p class="copyright">&copy; <span id="currentYear">2026</span> LifeOne. All rights reserved. Built with absolute privacy in mind.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript for Interactive Controls -->
+  <script>
+    // Set current year automatically
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Dark/Light Theme Switcher
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlEl = document.documentElement;
+
+    // Load theme from localStorage or default to system preference
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    htmlEl.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlEl.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Scroll to Top Button Visibility
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Active Section Observer for TOC
+    const sections = document.querySelectorAll('article');
+    const navItems = document.querySelectorAll('.toc-item');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px', // Trigger when section is in the middle of viewport
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute('id');
+          navItems.forEach(item => {
+            if (item.getAttribute('data-section') === sectionId) {
+              item.classList.add('active');
+            } else {
+              item.classList.remove('active');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>

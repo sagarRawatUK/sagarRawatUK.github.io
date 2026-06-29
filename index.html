@@ -3,49 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LifeOne - Build Better Habits</title>
+<title>LifeOne • Build Better Habits</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
---bg:#0b120f;--card:#121e18;--accent:#34d399;--primary:#2d5a45;--text:#eef2f7;--muted:#9fb2aa;
+--bg:#0b120f;--surface:#121e18;--surface2:#163126;--accent:#34d399;--text:#eef3f0;--muted:#9bb0a8;--border:#244336;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--bg);color:var(--text)}
-.container{max-width:1200px;margin:auto;padding:24px}
-header{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.logo{font:800 28px Outfit,sans-serif}
-.logo span{color:var(--accent)}
-nav a{color:var(--muted);text-decoration:none;margin-left:24px}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:80px 0}
-h1{font:800 64px Outfit,sans-serif;line-height:1.05}
-p.lead{font-size:20px;color:var(--muted);margin:24px 0 36px}
-.btn{display:inline-block;padding:14px 26px;border-radius:14px;text-decoration:none;margin-right:14px}
-.primary{background:var(--accent);color:#07130d;font-weight:700}
-.secondary{border:1px solid #2d5a45;color:#fff}
-.phone{background:#16231d;border:1px solid #284538;border-radius:36px;padding:14px;box-shadow:0 25px 60px rgba(0,0,0,.4)}
-.phone img{width:100%;border-radius:24px}
-.section{padding:80px 0}
-.title{text-align:center;font:700 40px Outfit,sans-serif;margin-bottom:16px}
-.sub{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 48px}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:radial-gradient(circle at top right,#163126 0,#0b120f 45%),#0b120f;color:var(--text)}
+.container{width:min(1180px,92%);margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;position:sticky;top:0;background:rgba(11,18,15,.75);backdrop-filter:blur(12px);z-index:10}
+.logo{font:800 30px Outfit,sans-serif}.logo span{color:var(--accent)}
+nav a{text-decoration:none;color:var(--muted);margin-left:24px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:70px 0}
+.badge{display:inline-block;padding:8px 16px;border-radius:999px;background:#163126;color:var(--accent);font-weight:700;margin-bottom:20px}
+h1{font:800 clamp(42px,6vw,68px) Outfit,sans-serif;line-height:1.05}
+.lead{font-size:20px;color:var(--muted);margin:24px 0 36px;line-height:1.7}
+.btn{display:inline-block;padding:15px 26px;border-radius:14px;text-decoration:none;font-weight:700}
+.primary{background:var(--accent);color:#07120d;margin-right:12px}
+.secondary{border:1px solid var(--border);color:#fff}
+.carousel{position:relative}
+.slide{display:none;border-radius:26px;overflow:hidden;border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.slide.active{display:block;animation:fade .7s}
+.slide img{width:100%;display:block}
+@keyframes fade{from{opacity:.2;transform:scale(.98)}to{opacity:1;transform:scale(1)}}
+.dots{text-align:center;margin-top:16px}.dot{height:10px;width:10px;border-radius:50%;background:#335248;display:inline-block;margin:0 4px}.dot.active{background:var(--accent)}
+.section{padding:90px 0}
+.title{text-align:center;font:700 42px Outfit,sans-serif;margin-bottom:14px}
+.sub{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 48px;line-height:1.7}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-.card{background:var(--card);padding:28px;border-radius:22px;border:1px solid #23362d}
-.card h3{margin:12px 0}
+.card{background:var(--surface);padding:28px;border-radius:22px;border:1px solid var(--border);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card h3{margin-bottom:10px}
 .card p{color:var(--muted)}
-.privacy{background:linear-gradient(135deg,#173226,#122019);border-radius:28px;padding:48px}
-footer{padding:48px 0;border-top:1px solid #1e3028;color:var(--muted);text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.gallery img{width:100%;border-radius:20px;border:1px solid var(--border);transition:.3s}
+.gallery img:hover{transform:translateY(-8px)}
+.privacy{background:linear-gradient(135deg,#183527,#102019);padding:50px;border-radius:28px;border:1px solid var(--border)}
+footer{border-top:1px solid var(--border);padding:40px 0;color:var(--muted);text-align:center}
 @media(max-width:900px){
 .hero{grid-template-columns:1fr}
-h1{font-size:46px}
+.gallery{grid-template-columns:1fr}
+nav{display:none}
 }
 </style>
 </head>
 <body>
+
 <div class="container">
 <header>
 <div class="logo">Life<span>One</span></div>
 <nav>
+<a href="#features">Features</a>
+<a href="#screens">Screenshots</a>
 <a href="privacy.html">Privacy</a>
 <a href="mailto:sagarrawatuk2@gmail.com">Support</a>
 </nav>
@@ -53,34 +66,52 @@ h1{font-size:46px}
 
 <section class="hero">
 <div>
-<div style="color:var(--accent);font-weight:700;margin-bottom:16px">Habit & Streak Tracker</div>
+<div class="badge">Habit & Streak Tracker</div>
 <h1>Build Better Habits.<br>One Day at a Time.</h1>
-<p class="lead">LifeOne helps you stay consistent, build lasting streaks, and achieve your goals with a beautiful, distraction-free experience. Your data always stays on your device.</p>
+<p class="lead">Create routines, maintain streaks and achieve your goals with a beautiful, distraction‑free habit tracker. Your data stays on your device—always.</p>
 <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.myx.lifeone">Download on Google Play</a>
 <a class="btn secondary" href="privacy.html">Privacy Policy</a>
 </div>
-<div class="phone">
-<img src="Screenshot_1781166491.png" alt="LifeOne Screenshot">
+
+<div class="carousel">
+<div class="slide active"><img src="assets/1.png" alt=""></div>
+<div class="slide"><img src="assets/2.png" alt=""></div>
+<div class="slide"><img src="assets/3.png" alt=""></div>
+<div class="dots">
+<span class="dot active"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
 </div>
 </section>
 
-<section class="section">
+<section class="section" id="features">
 <h2 class="title">Everything You Need</h2>
-<p class="sub">Powerful features designed to make building habits simple and enjoyable.</p>
+<p class="sub">Powerful tools designed to help you stay consistent and motivated every single day.</p>
 <div class="grid">
-<div class="card"><h3>✅ Habit Tracking</h3><p>Create unlimited habits and stay consistent every day.</p></div>
-<div class="card"><h3>🔥 Streaks</h3><p>Keep your momentum alive with motivating streaks.</p></div>
-<div class="card"><h3>📊 Statistics</h3><p>Track your growth with beautiful progress insights.</p></div>
+<div class="card"><h3>✅ Habit Tracking</h3><p>Create unlimited habits with flexible schedules.</p></div>
+<div class="card"><h3>🔥 Streaks</h3><p>Build momentum with beautiful streak tracking.</p></div>
+<div class="card"><h3>📊 Insights</h3><p>Monitor progress using intuitive statistics.</p></div>
 <div class="card"><h3>🔔 Reminders</h3><p>Never miss a habit with local notifications.</p></div>
+</div>
+</section>
+
+<section class="section" id="screens">
+<h2 class="title">Beautiful Experience</h2>
+<p class="sub">Designed with simplicity and focus in mind.</p>
+<div class="gallery">
+<img src="assets/1.png" alt="">
+<img src="assets/2.png" alt="">
+<img src="assets/3.png" alt="">
 </div>
 </section>
 
 <section class="section">
 <div class="privacy">
-<h2 class="title" style="text-align:left">Privacy First</h2>
-<p class="sub" style="text-align:left;margin:16px 0 0;max-width:none">
-LifeOne never requires an account, never uploads your habit data, and never tracks your activity.
-Everything is stored locally on your device, giving you complete ownership of your personal progress.
+<h2 style="font:700 40px Outfit,sans-serif;margin-bottom:18px">Privacy First</h2>
+<p style="color:var(--muted);font-size:18px;line-height:1.8">
+LifeOne does not require an account, does not upload your habits, and does not track your activity.
+Everything is stored locally on your device, giving you complete ownership of your data.
 </p>
 </div>
 </section>
@@ -89,5 +120,16 @@ Everything is stored locally on your device, giving you complete ownership of yo
 <p>© 2026 LifeOne • Better Habits. Better Life.</p>
 </footer>
 </div>
+
+<script>
+let i=0;
+const slides=document.querySelectorAll(".slide");
+const dots=document.querySelectorAll(".dot");
+function show(n){
+slides.forEach((s,k)=>{s.classList.toggle("active",k===n);dots[k].classList.toggle("active",k===n);});
+}
+setInterval(()=>{i=(i+1)%slides.length;show(i)},3500);
+</script>
+
 </body>
 </html>

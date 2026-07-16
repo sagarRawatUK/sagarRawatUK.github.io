@@ -1,0 +1,1 @@
+Place icon.png, feature-graphic.png and screenshots in their respective folders.

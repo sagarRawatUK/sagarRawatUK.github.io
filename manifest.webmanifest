@@ -1,0 +1,25 @@
+{
+  "name": "MYX — Privacy-first Android apps",
+  "short_name": "MYX",
+  "description": "Privacy-first Android applications by MYX.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070d15",
+  "theme_color": "#0b1420",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/myx_logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/myx_logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

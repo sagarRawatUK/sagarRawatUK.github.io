@@ -39,7 +39,6 @@
 }
 
 /* Per-app accents */
-body[data-app="memoone"]  { --accent:#ff7b1d; --accent-2:#ffb066; --accent-soft:rgba(255,123,29,.16); --accent-glow:rgba(255,123,29,.35); }
 body[data-app="lifeone"]  { --accent:#37c26b; --accent-2:#7fe0a0; --accent-soft:rgba(55,194,107,.16); --accent-glow:rgba(55,194,107,.32); }
 body[data-app="qrone"]    { --accent:#3b9dff; --accent-2:#7cc0ff; --accent-soft:rgba(59,157,255,.16); --accent-glow:rgba(59,157,255,.32); }
 body[data-app="remoteone"]{ --accent:#a982ff; --accent-2:#c7abff; --accent-soft:rgba(169,130,255,.16); --accent-glow:rgba(169,130,255,.32); }

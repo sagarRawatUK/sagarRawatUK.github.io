@@ -3,7 +3,6 @@
 Official developer website for MYX.
 
 ## Apps
-- MemoOne
 - LifeOne
 - QRone
 - RemoteOne

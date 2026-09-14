@@ -90,7 +90,6 @@
             "<p>Privacy-first Android apps crafted with care. AI, productivity and everyday utilities that respect your data.</p>" +
           "</div>" +
           '<div class="footer-col"><h4>Apps</h4>' +
-            '<a href="' + BASE + 'apps/memoone/">MemoOne</a>' +
             '<a href="' + BASE + 'apps/lifeone/">LifeOne</a>' +
             '<a href="' + BASE + 'apps/qrone/">QRone</a>' +
             '<a href="' + BASE + 'apps/remoteone/">RemoteOne</a>' +

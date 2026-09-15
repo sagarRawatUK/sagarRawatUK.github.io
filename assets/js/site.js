@@ -35,14 +35,14 @@
     host.className = "site-header";
     host.innerHTML =
       '<div class="container"><nav class="nav">' +
-        '<a class="brand" href="' + BASE + '" aria-label="MYX home">' +
-          '<img src="' + BASE + 'assets/myx_logo.png" alt="MYX logo">' +
-          '<span class="wordmark">MY<span>X</span></span>' +
-        "</a>" +
-        '<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">' + ICON.menu + "</button>" +
-        '<div class="nav-links" id="navLinks">' + links +
-          '<a class="btn btn-primary nav-cta" href="' + BASE + 'apps/">Explore Apps</a>' +
-        "</div>" +
+      '<a class="brand" href="' + BASE + '" aria-label="MYX home">' +
+      '<img src="' + BASE + 'assets/myx_logo.png" alt="MYX logo">' +
+      '<span class="wordmark">MY<span>X</span></span>' +
+      "</a>" +
+      '<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">' + ICON.menu + "</button>" +
+      '<div class="nav-links" id="navLinks">' + links +
+      '<a class="btn btn-primary nav-cta" href="' + BASE + 'apps/">Explore Apps</a>' +
+      "</div>" +
       "</nav></div>";
 
     // Active link
@@ -84,30 +84,33 @@
     host.className = "site-footer";
     host.innerHTML =
       '<div class="container">' +
-        '<div class="footer-grid">' +
-          '<div class="footer-brand">' +
-            '<a class="brand" href="' + BASE + '"><img src="' + BASE + 'assets/myx_logo.png" alt="MYX"><span class="wordmark">MY<span>X</span></span></a>' +
-            "<p>Privacy-first Android apps crafted with care. AI, productivity and everyday utilities that respect your data.</p>" +
-          "</div>" +
-          '<div class="footer-col"><h4>Apps</h4>' +
-            '<a href="' + BASE + 'apps/lifeone/">LifeOne</a>' +
-            '<a href="' + BASE + 'apps/qrone/">QRone</a>' +
-            '<a href="' + BASE + 'apps/remoteone/">RemoteOne</a>' +
-          "</div>" +
-          '<div class="footer-col"><h4>Company</h4>' +
-            '<a href="' + BASE + 'apps/">All Apps</a>' +
-            '<a href="' + BASE + 'support/">Support</a>' +
-            '<a href="' + BASE + 'privacy/">Privacy</a>' +
-          "</div>" +
-          '<div class="footer-col"><h4>Contact</h4>' +
-            '<a href="mailto:sagarrawatuk2@gmail.com">Email us</a>' +
-            '<a href="' + BASE + 'support/">Help center</a>' +
-          "</div>" +
-        "</div>" +
-        '<div class="footer-bottom">' +
-          "<span>© " + YEAR + " MYX · Building privacy-first apps</span>" +
-          '<a href="mailto:sagarrawatuk2@gmail.com">sagarrawatuk2@gmail.com</a>' +
-        "</div>" +
+      '<div class="footer-grid">' +
+      '<div class="footer-brand">' +
+      '<a class="brand" href="' + BASE + '"><img src="' + BASE + 'assets/myx_logo.png" alt="MYX"><span class="wordmark">MY<span>X</span></span></a>' +
+      "<p>Privacy-first Android apps crafted with care. AI, productivity and everyday utilities that respect your data.</p>" +
+      "</div>" +
+      '<div class="footer-col"><h4>Apps</h4>' +
+      '<a href="' + BASE + 'apps/lifeone/">LifeOne</a>' +
+      '<a href="' + BASE + 'apps/qrone/">QRone</a>' +
+      '<a href="' + BASE + 'apps/remoteone/">RemoteOne</a>' +
+      '<a href="' + BASE + 'apps/breedly/">Breedly</a>' +
+      '<a href="' + BASE + 'apps/ireject/">iReject</a>' +
+      '<a href="' + BASE + 'apps/billone/">BillOne</a>' +
+      "</div>" +
+      '<div class="footer-col"><h4>Company</h4>' +
+      '<a href="' + BASE + 'apps/">All Apps</a>' +
+      '<a href="' + BASE + 'support/">Support</a>' +
+      '<a href="' + BASE + 'privacy/">Privacy</a>' +
+      "</div>" +
+      '<div class="footer-col"><h4>Contact</h4>' +
+      '<a href="mailto:sagarrawatuk2@gmail.com">Email us</a>' +
+      '<a href="' + BASE + 'support/">Help center</a>' +
+      "</div>" +
+      "</div>" +
+      '<div class="footer-bottom">' +
+      "<span>© " + YEAR + " MYX · Building privacy-first apps</span>" +
+      '<a href="mailto:sagarrawatuk2@gmail.com">sagarrawatuk2@gmail.com</a>' +
+      "</div>" +
       "</div>";
   }
 

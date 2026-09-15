@@ -6,6 +6,9 @@ Official developer website for MYX.
 - LifeOne
 - QRone
 - RemoteOne
+- Breedly
+- iReject
+- BillOne
 
 Hosted using GitHub Pages.
 

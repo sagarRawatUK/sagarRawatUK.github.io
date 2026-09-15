@@ -700,7 +700,10 @@ img {
 }
 
 .slide.slide-wide img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: min(600px, 65vh);
+  object-fit: contain;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);

@@ -19,10 +19,10 @@
   --faint: #6b7c92;
 
   /* Accent (overridable per app) */
-  --accent: #ff7b1d;
-  --accent-2: #ff9d4d;
-  --accent-soft: rgba(255, 123, 29, .16);
-  --accent-glow: rgba(255, 123, 29, .35);
+  --accent: #e31b23;
+  --accent-2: #ff5960;
+  --accent-soft: rgba(227, 27, 35, .16);
+  --accent-glow: rgba(227, 27, 35, .35);
 
   --radius: 22px;
   --radius-lg: 30px;
@@ -36,6 +36,24 @@
 
   --font-head: "Outfit", system-ui, sans-serif;
   --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+body[data-theme="light"] {
+  --bg-0: #f5f6f8;
+  --bg-1: #ffffff;
+  --bg-2: #eceef1;
+  --surface: rgba(255, 255, 255, .72);
+  --surface-2: rgba(255, 255, 255, .94);
+  --border: rgba(20, 24, 31, .12);
+  --border-strong: rgba(20, 24, 31, .2);
+  --text: #17191d;
+  --muted: #5f6874;
+  --faint: #7c8590;
+  --accent: #d71920;
+  --accent-2: #ef4148;
+  --accent-soft: rgba(215, 25, 32, .1);
+  --accent-glow: rgba(215, 25, 32, .24);
+  --shadow: 0 24px 60px -20px rgba(35, 39, 46, .2);
 }
 
 /* Per-app accents */
@@ -96,7 +114,9 @@ html {
 body {
   font-family: var(--font-body);
   color: var(--text);
-  background: var(--bg-0);
+  background:
+    radial-gradient(circle at 50% -20%, rgba(227, 27, 35, .12), transparent 42%),
+    var(--bg-0);
   line-height: 1.65;
   min-height: 100vh;
   overflow-x: clip;
@@ -134,14 +154,41 @@ body::after {
   animation: drift2 22s var(--ease) infinite alternate;
 }
 
+body[data-theme="light"] {
+  background:
+    radial-gradient(circle at 50% -20%, rgba(227, 27, 35, .08), transparent 42%),
+    var(--bg-0);
+}
+
+body[data-theme="light"]::before {
+  opacity: .2;
+}
+
+body[data-theme="light"]::after {
+  background: radial-gradient(circle, #ffb5b8 0%, transparent 68%);
+  opacity: .2;
+}
+
 .bg-grid {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, .04), transparent 60%),
+    linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, .05), transparent 58%),
     linear-gradient(180deg, var(--bg-1), var(--bg-0) 60%);
+  background-size: 52px 52px, 52px 52px, auto, auto;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent 76%);
+}
+
+body[data-theme="light"] .bg-grid {
+  background:
+    linear-gradient(rgba(20, 24, 31, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 24, 31, .035) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(215, 25, 32, .05), transparent 58%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0) 64%);
 }
 
 @keyframes drift1 {
@@ -265,7 +312,7 @@ img {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-2), var(--accent));
-  color: #0a1018;
+  color: #fff;
   box-shadow: var(--shadow-glow);
 }
 
@@ -314,6 +361,10 @@ img {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom-color: var(--border);
+}
+
+body[data-theme="light"] .site-header.scrolled {
+  background: rgba(255, 255, 255, .82);
 }
 
 .nav {
@@ -375,6 +426,33 @@ img {
   margin-left: 8px;
 }
 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-left: 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: color .2s, background .2s, border-color .2s, transform .2s;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  background: var(--surface-2);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.theme-toggle svg {
+  width: 19px;
+  height: 19px;
+}
+
 .nav-toggle {
   display: none;
   background: var(--surface);
@@ -398,6 +476,10 @@ img {
     display: inline-flex;
   }
 
+  .theme-toggle {
+    margin-left: auto;
+  }
+
   .nav-links {
     position: fixed;
     inset: 0 0 auto 0;
@@ -413,6 +495,10 @@ img {
     visibility: hidden;
     transition: transform .35s var(--ease), opacity .3s;
     border-bottom: 1px solid var(--border);
+  }
+
+  body[data-theme="light"] .nav-links {
+    background: rgba(255, 255, 255, .97);
   }
 
   .nav-links.open {
@@ -433,7 +519,7 @@ img {
 
 /* ---------- Hero ---------- */
 .hero {
-  padding: clamp(56px, 9vw, 110px) 0 clamp(40px, 6vw, 72px);
+  padding: clamp(72px, 11vw, 142px) 0 clamp(48px, 7vw, 88px);
 }
 
 .hero-grid {
@@ -448,7 +534,10 @@ img {
 }
 
 .hero h1 {
-  font-size: clamp(38px, 6.4vw, 72px);
+  max-width: 920px;
+  margin-inline: auto;
+  font-size: clamp(42px, 7vw, 82px);
+  letter-spacing: -.045em;
   margin-bottom: 22px;
 }
 
@@ -1049,19 +1138,20 @@ img {
 .app-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: 26px;
 }
 
 .app-card {
-  padding: 30px;
+  padding: 16px 22px 24px;
   border-radius: var(--radius);
   text-decoration: none;
   color: var(--text);
-  background: linear-gradient(160deg, var(--surface-2), var(--surface));
-  border: 1px solid var(--border);
+  background: linear-gradient(145deg, rgba(255, 255, 255, .105), rgba(255, 255, 255, .035));
+  border: 1px solid rgba(255, 255, 255, .14);
   position: relative;
   overflow: hidden;
-  transition: transform .35s var(--ease), border-color .35s, box-shadow .35s;
+  box-shadow: 0 18px 48px -30px rgba(0, 0, 0, .9);
+  transition: transform .35s var(--ease), border-color .35s, box-shadow .35s, background .35s;
   display: flex;
   flex-direction: column;
 }
@@ -1078,11 +1168,29 @@ img {
 .app-card:hover {
   transform: translateY(-8px);
   border-color: var(--ac, var(--accent));
-  box-shadow: var(--shadow);
+  background: linear-gradient(145deg, rgba(255, 255, 255, .13), rgba(255, 255, 255, .045));
+  box-shadow: 0 30px 64px -28px var(--ac-glow, rgba(0, 0, 0, .8));
 }
 
 .app-card:hover::after {
   opacity: 1;
+}
+
+.app-card .ac-screenshot {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: calc(var(--radius) - 6px);
+  border: 1px solid rgba(255, 255, 255, .13);
+  margin-bottom: 24px;
+  background: var(--bg-1);
+  transition: transform .5s var(--ease), filter .5s var(--ease);
+}
+
+.app-card:hover .ac-screenshot {
+  transform: scale(1.018);
+  filter: saturate(1.08) contrast(1.02);
 }
 
 .app-card .ac-icon {
@@ -1094,7 +1202,7 @@ img {
   font-size: 32px;
   background: var(--ac-soft, var(--accent-soft));
   border: 1px solid var(--border);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .app-card h2 {

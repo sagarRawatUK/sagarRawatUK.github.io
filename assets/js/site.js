@@ -11,6 +11,8 @@
   var ICON = {
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>',
+    moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.7A8.5 8.5 0 0 1 9.3 3.5 8.5 8.5 0 1 0 20.5 14.7Z"/></svg>',
     chev: '<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>',
     prev: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>',
     next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>'
@@ -24,6 +26,22 @@
   ];
 
   var YEAR = document.documentElement.getAttribute("data-year") || "2026";
+  var THEME_KEY = "myx-theme";
+
+  function setTheme(theme) {
+    document.body.setAttribute("data-theme", theme);
+    var button = document.querySelector(".theme-toggle");
+    if (!button) return;
+    var light = theme === "light";
+    button.innerHTML = light ? ICON.moon : ICON.sun;
+    button.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+    button.setAttribute("title", light ? "Switch to dark mode" : "Switch to light mode");
+  }
+
+  function initTheme() {
+    var saved = localStorage.getItem(THEME_KEY);
+    setTheme(saved === "light" ? "light" : "dark");
+  }
 
   /* ---- Header ---- */
   function buildHeader() {
@@ -39,11 +57,20 @@
       '<img src="' + BASE + 'assets/myx_logo.png" alt="MYX logo">' +
       '<span class="wordmark">MY<span>X</span></span>' +
       "</a>" +
+      '<button class="theme-toggle" type="button" aria-label="Switch to light mode"></button>' +
       '<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">' + ICON.menu + "</button>" +
       '<div class="nav-links" id="navLinks">' + links +
       '<a class="btn btn-primary nav-cta" href="' + BASE + 'apps/">Explore Apps</a>' +
       "</div>" +
       "</nav></div>";
+
+    setTheme(document.body.getAttribute("data-theme") || "dark");
+
+    host.querySelector(".theme-toggle").addEventListener("click", function () {
+      var theme = document.body.getAttribute("data-theme") === "light" ? "dark" : "light";
+      localStorage.setItem(THEME_KEY, theme);
+      setTheme(theme);
+    });
 
     // Active link
     var path = location.pathname.replace(/index\.html$/, "");
@@ -204,6 +231,7 @@
   }
 
   function init() {
+    initTheme();
     buildHeader();
     buildFooter();
     injectCarouselIcons();

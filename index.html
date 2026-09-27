@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MYX — Privacy-first Android apps</title>
+  <title>MYX — Premium, privacy-first Android apps by Sagar Rawat</title>
   <meta name="description"
-    content="MYX builds beautifully designed, privacy-first Android apps across AI, productivity and everyday utilities.">
+    content="MYX is the independent app studio of Flutter developer Sagar Rawat — beautifully simple, privacy-first Android apps for habits, utilities, business and wellbeing.">
   <link rel="canonical" href="https://sagarrawatuk.github.io/">
-  <meta name="author" content="MYX">
-  <meta name="theme-color" content="#0b1420">
+  <meta name="author" content="Sagar Rawat">
+  <meta name="theme-color" content="#06080c">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="MYX">
-  <meta property="og:title" content="MYX — Privacy-first Android apps">
+  <meta property="og:title" content="MYX — Premium, privacy-first Android apps">
   <meta property="og:description"
-    content="MYX builds beautifully designed, privacy-first Android apps across AI, productivity and everyday utilities.">
+    content="Beautifully simple, privacy-first Android apps crafted with Flutter by independent developer Sagar Rawat.">
   <meta property="og:url" content="https://sagarrawatuk.github.io/">
   <meta property="og:image" content="https://sagarrawatuk.github.io/assets/myx_logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MYX — Privacy-first Android apps">
+  <meta name="twitter:title" content="MYX — Premium, privacy-first Android apps">
   <meta name="twitter:description"
-    content="MYX builds beautifully designed, privacy-first Android apps across AI, productivity and everyday utilities.">
+    content="Beautifully simple, privacy-first Android apps crafted with Flutter by independent developer Sagar Rawat.">
   <meta name="twitter:image" content="https://sagarrawatuk.github.io/assets/myx_logo.png">
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/myx_logo.png">
@@ -30,146 +30,663 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="preload" as="image" href="/assets/img/paymentsuno/1.webp" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/site.css">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MYX","url":"https://sagarrawatuk.github.io","email":"sagarrawatuk2@gmail.com","description":"Privacy-first Android applications by MYX."}</script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"Person","@id":"https://sagarrawatuk.github.io/#sagar","name":"Sagar Rawat","jobTitle":"Flutter Developer","url":"https://sagarrawatuk.github.io","email":"sagarrawatuk2@gmail.com","sameAs":["https://github.com/sagarRawatUK"]},
+      {"@type":"Organization","name":"MYX","url":"https://sagarrawatuk.github.io","logo":"https://sagarrawatuk.github.io/assets/myx_logo.png","email":"sagarrawatuk2@gmail.com","founder":{"@id":"https://sagarrawatuk.github.io/#sagar"},"description":"Privacy-first Android applications by MYX."}
+    ]}
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="bg-grid"></div>
   <header id="site-header"></header>
-  <main>
-    <section class="hero">
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1" data-parallax="0.25"></div>
+        <div class="orb orb-2" data-parallax="0.15"></div>
+        <div class="orb orb-3" data-parallax="0.35"></div>
+        <div class="hero-lines"></div>
+        <div class="spotlight"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div>
+          <a class="status-pill intro" href="#featured" style="--d:.05s">
+            <span class="sp-tag"><span class="pulse-dot"></span>3 live</span>
+            Independent Flutter developer · on Google Play
+          </a>
+          <h1 id="hero-title" class="intro" style="--d:.15s">
+            <span class="line">Apps that just work.</span>
+            <span class="line gradient-text">Private by design.</span>
+          </h1>
+          <p class="lead intro" style="--d:.28s">I'm <strong>Sagar Rawat</strong>, the independent Flutter developer
+            behind MYX. I design and ship polished Android apps for habits, utilities, business and wellbeing — fast,
+            beautiful and local-first.</p>
+          <div class="hero-actions intro" style="--d:.4s">
+            <a class="btn btn-primary btn-lg magnetic" href="#featured">Explore the apps <span class="arrow"
+                aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost btn-lg magnetic" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-trust intro" style="--d:.52s">
+            <div class="icon-stack" aria-hidden="true">
+              <span>🌱</span><span>📱</span><span>📺</span><span>🔊</span><span>🧾</span><span>💔</span><span>🐾</span>
+            </div>
+            <span><b>7 apps</b> designed, built &amp; supported by one developer</span>
+          </div>
+        </div>
+
+        <div class="hero-stack intro" style="--d:.2s">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="poster p-left"><img src="/assets/img/qrone/1.webp" alt="QRone QR and barcode scanner"
+              width="640" height="1349"></div>
+          <div class="poster p-right"><img src="/assets/img/ireject/1.webp" alt="iReject breakup recovery app"
+              width="640" height="1138"></div>
+          <div class="poster p-center"><img src="/assets/img/paymentsuno/1.webp"
+              alt="PaymentSuno turns your phone into a UPI soundbox" width="640" height="1286" fetchpriority="high">
+          </div>
+          <div class="float-chip c1"><span class="fc-ico">🔒</span><span class="fc-text">Local-first<small>Your
+                data stays on device</small></span></div>
+          <div class="float-chip c2"><span class="fc-ico">⚡</span><span class="fc-text">Built with Flutter<small>Smooth,
+                native-feeling UI</small></span></div>
+          <div class="float-chip c3"><span class="fc-ico">▶</span><span class="fc-text">Live on Google
+              Play<small>LifeOne · QRone · RemoteOne</small></span></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#apps-strip" aria-label="Scroll to content"></a>
+    </section>
+
+    <!-- ============ App marquee ============ -->
+    <div class="marquee" id="apps-strip" aria-label="MYX apps">
+      <div class="marquee-track">
+        <a class="marquee-item" data-accent="lifeone" href="/apps/lifeone/"><span class="mi-ico">🌱</span>LifeOne
+          <small>Habits</small></a>
+        <a class="marquee-item" data-accent="qrone" href="/apps/qrone/"><span class="mi-ico">📱</span>QRone
+          <small>QR &amp; barcode</small></a>
+        <a class="marquee-item" data-accent="remoteone" href="/apps/remoteone/"><span
+            class="mi-ico">📺</span>RemoteOne <small>Smart TV remote</small></a>
+        <a class="marquee-item" data-accent="paymentsuno" href="/apps/paymentsuno/"><span
+            class="mi-ico">🔊</span>PaymentSuno <small>UPI soundbox</small></a>
+        <a class="marquee-item" data-accent="billone" href="/apps/billone/"><span class="mi-ico">🧾</span>BillOne
+          <small>GST invoicing</small></a>
+        <a class="marquee-item" data-accent="ireject" href="/apps/ireject/"><span class="mi-ico">💔</span>iReject
+          <small>Breakup recovery</small></a>
+        <a class="marquee-item" data-accent="breedly" href="/apps/breedly/"><span class="mi-ico">🐾</span>Breedly
+          <small>Pet matching</small></a>
+      </div>
+    </div>
+
+    <!-- ============ Achievements ============ -->
+    <section class="section" id="achievements" aria-labelledby="ach-title">
       <div class="container">
-        <div style="text-align:center;max-width:820px;margin-inline:auto">
-          <span class="eyebrow">Privacy-first Android apps</span>
-          <h1>Beautifully simple apps that <span class="gradient-text">respect your data</span></h1>
-          <p class="lead" style="margin-inline:auto">AI, productivity and everyday utilities — crafted to be fast,
-            private and a joy to use. No noise, no tracking, just apps that work.</p>
-          <div class="hero-actions" style="justify-content:center"><a class="btn btn-primary" href="/apps/">Explore
-              apps</a><a class="btn btn-ghost" href="/support/">Get support</a></div>
+        <div class="section-head center reveal">
+          <span class="eyebrow">By the numbers</span>
+          <h2 id="ach-title">Small studio. Serious craft.</h2>
+          <p>No agencies, no templates — just careful product thinking and obsessive attention to detail.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="num"><span data-count="7">7</span></div>
+            <div class="label">Apps shipped</div>
+            <div class="sub">Designed &amp; built in-house</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="3">3</span></div>
+            <div class="label">Live on Google Play</div>
+            <div class="sub">Ready to download today</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="4">4</span></div>
+            <div class="label">In early access</div>
+            <div class="sub">Request an invite by email</div>
+          </div>
+          <div class="stat">
+            <div class="num"><span data-count="100">100</span><sup>%</sup></div>
+            <div class="label">Built with Flutter</div>
+            <div class="sub">One craft, every app</div>
+          </div>
+        </div>
+        <div class="milestones" data-stagger="0.07">
+          <span class="milestone reveal">🚀 <b>LifeOne, QRone &amp; RemoteOne</b> live on Google Play</span>
+          <span class="milestone reveal">🧪 <b>Early access</b> open for 4 new apps</span>
+          <span class="milestone reveal">🗣️ <b>Hindi &amp; English</b> in BillOne and PaymentSuno</span>
+          <span class="milestone reveal">✨ <b>PaymentSuno v1.0.6</b> ships Premium</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="apps">
+    <!-- ============ Featured apps ============ -->
+    <section class="section" id="featured" aria-labelledby="featured-title" style="padding-top:0">
       <div class="container">
-        <div class="section-head center reveal"><span class="eyebrow">Our apps</span>
-          <h2>Seven apps, one promise</h2>
-          <p>Every MYX app is private by design and built for the long run.</p>
+        <div class="section-head center reveal">
+          <span class="eyebrow">Featured apps</span>
+          <h2 id="featured-title">Live on Google Play</h2>
+          <p>Each app is built to do one job brilliantly — and to keep your data where it belongs.</p>
         </div>
-        <div class="app-grid">
-          <a class="app-card reveal" href="/apps/lifeone/"
-            style="--ac:var(--accent);--ac-soft:rgba(55,194,107,.16);--ac-glow:rgba(55,194,107,.18);--ac:#37c26b">
-            <img class="ac-screenshot" src="/assets/screenshots/lifeone/1.png" alt="LifeOne app screenshot"
-              loading="lazy">
-            <div class="ac-icon">🌱</div>
-            <h2>LifeOne</h2>
-            <p class="ac-desc">Create simple daily habits, keep your streaks alive with freezes and milestones, and
-              watch small routines grow into a life you're proud of.</p>
-            <div class="tags"><span class="tag">Habits</span><span class="tag">Streaks</span><span
-                class="tag">Health</span><span class="tag">Local-first</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
-          <a class="app-card reveal" href="/apps/qrone/"
-            style="--ac:var(--accent);--ac-soft:rgba(59,157,255,.16);--ac-glow:rgba(59,157,255,.18);--ac:#3b9dff">
-            <img class="ac-screenshot" src="/assets/screenshots/qrone/1.png" alt="QRone app screenshot" loading="lazy">
-            <div class="ac-icon">📱</div>
-            <h2>QRone</h2>
-            <p class="ac-desc">A fast, no-nonsense QR & barcode scanner with beautiful QR generation, scan history and
-              instant sharing — everything on-device and offline.</p>
-            <div class="tags"><span class="tag">Scanner</span><span class="tag">QR</span><span
-                class="tag">Barcode</span><span class="tag">Offline</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
-          <a class="app-card reveal" href="/apps/remoteone/"
-            style="--ac:var(--accent);--ac-soft:rgba(169,130,255,.16);--ac-glow:rgba(169,130,255,.18);--ac:#a982ff">
-            <img class="ac-screenshot" src="/assets/screenshots/remoteone/1.png" alt="RemoteOne app screenshot"
-              loading="lazy">
-            <div class="ac-icon">📺</div>
-            <h2>RemoteOne</h2>
-            <p class="ac-desc">Control compatible Smart TVs over your Wi-Fi network with an intuitive remote, a precise
-              touchpad and quick discovery — no extra hardware, no internet required.</p>
-            <div class="tags"><span class="tag">Remote</span><span class="tag">Smart TV</span><span
-                class="tag">Wi-Fi</span><span class="tag">Utilities</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
-          <a class="app-card reveal" href="/apps/breedly/"
-            style="--ac:var(--accent);--ac-soft:rgba(138,215,106,.16);--ac-glow:rgba(138,215,106,.18);--ac:#8ad76a">
-            <img class="ac-screenshot"
-              src="/assets/screenshots/breedly/ChatGPT%20Image%20Sep%2015,%202026,%2010_09_21%20AM.png"
-              alt="Breedly app screenshot" loading="lazy">
-            <div class="ac-icon">🐾</div>
-            <h2>Breedly</h2>
-            <p class="ac-desc">A trusted breeding network for pet owners that uses transparent compatibility scoring,
-              health-aware matching and responsible breeding guidance.</p>
-            <div class="tags"><span class="tag">Pet Match</span><span class="tag">Breeding</span><span
-                class="tag">Health</span><span class="tag">Safety</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
-          <a class="app-card reveal" href="/apps/ireject/"
-            style="--ac:var(--accent);--ac-soft:rgba(255,109,138,.16);--ac-glow:rgba(255,109,138,.18);--ac:#ff6d8a">
-            <img class="ac-screenshot" src="/assets/screenshots/ireject/1.png" alt="iReject app screenshot"
-              loading="lazy">
-            <div class="ac-icon">💔</div>
-            <h2>iReject</h2>
-            <p class="ac-desc">Private breakup recovery support with a no-contact streak, guided journey, journal,
-              anchors and reflective AI listener for difficult moments.</p>
-            <div class="tags"><span class="tag">Recovery</span><span class="tag">Journal</span><span
-                class="tag">AI</span><span class="tag">Private</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
-          <a class="app-card reveal" href="/apps/billone/"
-            style="--ac:var(--accent);--ac-soft:rgba(38,199,180,.16);--ac-glow:rgba(38,199,180,.18);--ac:#26c7b4">
-            <img class="ac-screenshot"
-              src="/assets/screenshots/billone/ChatGPT%20Image%20Aug%2026,%202026,%2003_47_05%20PM.png"
-              alt="BillOne app screenshot" loading="lazy">
-            <div class="ac-icon">🧾</div>
-            <h2>BillOne</h2>
-            <p class="ac-desc">Offline-first GST invoicing and inventory management for small businesses, with local
-              data storage and optional account sync.</p>
-            <div class="tags"><span class="tag">GST</span><span class="tag">Invoices</span><span
-                class="tag">Inventory</span><span class="tag">Offline</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
-          <a class="app-card reveal" href="/apps/paymentsuno/"
-            style="--ac:var(--accent);--ac-soft:rgba(34,176,90,.16);--ac-glow:rgba(34,176,90,.18);--ac:#22b05a">
-            <img class="ac-screenshot" src="/assets/screenshots/paymentsuno/1.png" alt="PaymentSuno app screenshot"
-              loading="lazy">
-            <div class="ac-icon">🔊</div>
-            <h2>PaymentSuno</h2>
-            <p class="ac-desc">A UPI soundbox for your phone that announces every payment from Google Pay, PhonePe, Paytm, BHIM and bank
-              apps out loud — instant, on-device and private.</p>
-            <div class="tags"><span class="tag">UPI</span><span class="tag">Soundbox</span><span
-                class="tag">Payments</span><span class="tag">Business</span></div>
-            <span class="ac-link">Learn more →</span>
-          </a>
+
+        <div class="stages">
+          <!-- LifeOne -->
+          <article class="stage reveal" data-accent="lifeone" aria-labelledby="st-lifeone">
+            <div class="stage-text">
+              <div class="stage-head">
+                <div class="app-glyph" aria-hidden="true">🌱</div>
+                <div class="meta"><span class="name">LifeOne</span><span class="cat">Health · Habits</span></div>
+              </div>
+              <h3 id="st-lifeone">Build habits that <span class="gradient-text">actually stick</span></h3>
+              <p class="stage-desc">Create simple daily habits, keep your streaks alive with freezes and milestones,
+                and watch small routines grow into a life you're proud of.</p>
+              <ul class="stage-features">
+                <li><span>🌱</span>Simple daily habits</li>
+                <li><span>🔥</span>Streaks &amp; freezes</li>
+                <li><span>📈</span>Progress &amp; stats</li>
+                <li><span>🏆</span>Milestones</li>
+              </ul>
+              <div class="stage-actions">
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.myx.lifeone"
+                  target="_blank" rel="noopener"><svg viewBox="0 0 100 100" aria-hidden="true">
+                    <polygon points="20,12 20,50 52,50" fill="#00b7ff" />
+                    <polygon points="20,50 20,88 52,50" fill="#00d764" />
+                    <polygon points="20,12 52,50 86,50" fill="#ff4a55" />
+                    <polygon points="20,88 52,50 86,50" fill="#ffc400" />
+                  </svg><span class="sb-text"><small>GET IT ON</small><b>Google Play</b></span></a>
+                <a class="link-arrow" href="/apps/lifeone/">Explore LifeOne <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="stage-visual">
+              <div class="preview wide" data-preview="3400">
+                <img src="/assets/img/lifeone/1.webp" alt="LifeOne Today screen with daily progress"
+                  width="1280" height="721" loading="lazy">
+                <img src="/assets/img/lifeone/2.webp" alt="LifeOne habit streaks" width="1280" height="721"
+                  loading="lazy">
+                <img src="/assets/img/lifeone/3.webp" alt="LifeOne progress and stats" width="1280" height="721"
+                  loading="lazy">
+              </div>
+              <div class="float-chip stage-chip"><span class="fc-ico">🔥</span><span class="fc-text">Streak
+                  freezes<small>Protect your progress</small></span></div>
+            </div>
+          </article>
+
+          <!-- QRone -->
+          <article class="stage flip reveal" data-accent="qrone" aria-labelledby="st-qrone">
+            <div class="stage-text">
+              <div class="stage-head">
+                <div class="app-glyph" aria-hidden="true">📱</div>
+                <div class="meta"><span class="name">QRone</span><span class="cat">Utilities · Tools</span></div>
+              </div>
+              <h3 id="st-qrone">Scan, generate and share <span class="gradient-text">in a snap</span></h3>
+              <p class="stage-desc">A fast, no-nonsense QR &amp; barcode scanner with beautiful QR generation, scan
+                history and instant sharing — everything on-device and offline.</p>
+              <ul class="stage-features">
+                <li><span>⚡</span>Fast scanning</li>
+                <li><span>🏷️</span>All barcodes</li>
+                <li><span>✨</span>QR generation</li>
+                <li><span>🕘</span>Scan history</li>
+              </ul>
+              <div class="stage-actions">
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.sagarrawat.qrone"
+                  target="_blank" rel="noopener"><svg viewBox="0 0 100 100" aria-hidden="true">
+                    <polygon points="20,12 20,50 52,50" fill="#00b7ff" />
+                    <polygon points="20,50 20,88 52,50" fill="#00d764" />
+                    <polygon points="20,12 52,50 86,50" fill="#ff4a55" />
+                    <polygon points="20,88 52,50 86,50" fill="#ffc400" />
+                  </svg><span class="sb-text"><small>GET IT ON</small><b>Google Play</b></span></a>
+                <a class="link-arrow" href="/apps/qrone/">Explore QRone <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="stage-visual">
+              <div class="preview" data-preview="3000">
+                <img src="/assets/img/qrone/1.webp" alt="QRone home screen" width="640" height="1349"
+                  loading="lazy">
+                <img src="/assets/img/qrone/2.webp" alt="QRone scanning a code" width="640" height="1351"
+                  loading="lazy">
+                <img src="/assets/img/qrone/3.webp" alt="QRone QR generation" width="640" height="1355"
+                  loading="lazy">
+              </div>
+              <div class="float-chip stage-chip"><span class="fc-ico">📴</span><span class="fc-text">Works
+                  offline<small>Everything on-device</small></span></div>
+            </div>
+          </article>
+
+          <!-- RemoteOne -->
+          <article class="stage reveal" data-accent="remoteone" aria-labelledby="st-remoteone">
+            <div class="stage-text">
+              <div class="stage-head">
+                <div class="app-glyph" aria-hidden="true">📺</div>
+                <div class="meta"><span class="name">RemoteOne</span><span class="cat">Utilities · Smart
+                    home</span></div>
+              </div>
+              <h3 id="st-remoteone">Your universal remote, <span class="gradient-text">in your pocket</span></h3>
+              <p class="stage-desc">Control compatible Smart TVs over your Wi-Fi network with an intuitive remote, a
+                precise touchpad and quick discovery — no extra hardware, no internet required.</p>
+              <ul class="stage-features">
+                <li><span>📡</span>TV discovery</li>
+                <li><span>🎛️</span>Full controls</li>
+                <li><span>🖐️</span>Precise touchpad</li>
+                <li><span>📺</span>Multiple TVs</li>
+              </ul>
+              <div class="stage-actions">
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.sagarrawat.remoteone"
+                  target="_blank" rel="noopener"><svg viewBox="0 0 100 100" aria-hidden="true">
+                    <polygon points="20,12 20,50 52,50" fill="#00b7ff" />
+                    <polygon points="20,50 20,88 52,50" fill="#00d764" />
+                    <polygon points="20,12 52,50 86,50" fill="#ff4a55" />
+                    <polygon points="20,88 52,50 86,50" fill="#ffc400" />
+                  </svg><span class="sb-text"><small>GET IT ON</small><b>Google Play</b></span></a>
+                <a class="link-arrow" href="/apps/remoteone/">Explore RemoteOne <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="stage-visual">
+              <div class="preview" data-preview="3000">
+                <img src="/assets/img/remoteone/1.webp" alt="RemoteOne device discovery" width="640" height="1385"
+                  loading="lazy">
+                <img src="/assets/img/remoteone/2.webp" alt="RemoteOne remote controls" width="640" height="1384"
+                  loading="lazy">
+                <img src="/assets/img/remoteone/3.webp" alt="RemoteOne touchpad" width="640" height="1381"
+                  loading="lazy">
+              </div>
+              <div class="float-chip stage-chip"><span class="fc-ico">📶</span><span class="fc-text">No extra
+                  hardware<small>Just your Wi-Fi</small></span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section-sm">
+    <!-- ============ All apps ============ -->
+    <section class="section" id="all-apps" aria-labelledby="all-title" style="padding-top:0">
       <div class="container">
-        <div class="glass features reveal" style="padding:clamp(28px,4vw,40px)">
-          <div class="feature" style="background:none;border:none;padding:0">
-            <div class="f-icon">🔒</div>
-            <h3>Private by design</h3>
-            <p>On-device and local-first wherever possible. Your data stays yours.</p>
+        <div class="section-head center reveal">
+          <span class="eyebrow">All apps</span>
+          <h2 id="all-title">The complete collection</h2>
+          <p>From habit tracking to GST invoicing — every MYX app is private by design and built for the long run.
+          </p>
+        </div>
+        <div class="filter-wrap reveal">
+          <div class="filter-bar" role="group" aria-label="Filter apps" data-filter-group="tiles">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="live" aria-pressed="false">On Google Play</button>
+            <button type="button" data-filter="soon" aria-pressed="false">Early access</button>
           </div>
-          <div class="feature" style="background:none;border:none;padding:0">
-            <div class="f-icon">⚡</div>
-            <h3>Fast & focused</h3>
-            <p>Lightweight apps that do one thing well, without the bloat.</p>
+        </div>
+
+        <div class="tile-grid" id="tiles" data-stagger="0.06">
+          <article class="app-tile reveal" data-accent="lifeone" data-status="live">
+            <div class="tile-media wide"><span class="tile-status"><span class="dot"></span>On Google Play</span><img
+                src="/assets/img/lifeone/1.webp" alt="" width="1280" height="721" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">🌱</span>
+                <div>
+                  <h3><a href="/apps/lifeone/">LifeOne</a></h3><span class="cat">Health · Habits</span>
+                </div>
+              </div>
+              <p>Simple daily habits, streaks with freezes and milestones that turn routines into progress.</p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="https://play.google.com/store/apps/details?id=com.myx.lifeone" target="_blank"
+                  rel="noopener">Get on Google Play</a><a class="link-arrow" href="/apps/lifeone/"
+                  tabindex="-1">Details <span aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+
+          <article class="app-tile reveal" data-accent="qrone" data-status="live">
+            <div class="tile-media"><span class="tile-status"><span class="dot"></span>On Google Play</span><img
+                src="/assets/img/qrone/1.webp" alt="" width="640" height="1349" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">📱</span>
+                <div>
+                  <h3><a href="/apps/qrone/">QRone</a></h3><span class="cat">Utilities · Tools</span>
+                </div>
+              </div>
+              <p>Fast QR &amp; barcode scanning, beautiful QR generation and scan history — all offline.</p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="https://play.google.com/store/apps/details?id=com.sagarrawat.qrone" target="_blank"
+                  rel="noopener">Get on Google Play</a><a class="link-arrow" href="/apps/qrone/"
+                  tabindex="-1">Details <span aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+
+          <article class="app-tile reveal" data-accent="remoteone" data-status="live">
+            <div class="tile-media"><span class="tile-status"><span class="dot"></span>On Google Play</span><img
+                src="/assets/img/remoteone/1.webp" alt="" width="640" height="1385" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">📺</span>
+                <div>
+                  <h3><a href="/apps/remoteone/">RemoteOne</a></h3><span class="cat">Utilities · Smart home</span>
+                </div>
+              </div>
+              <p>Control compatible Smart TVs over Wi-Fi with a clean remote and precise touchpad.</p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="https://play.google.com/store/apps/details?id=com.sagarrawat.remoteone" target="_blank"
+                  rel="noopener">Get on Google Play</a><a class="link-arrow" href="/apps/remoteone/"
+                  tabindex="-1">Details <span aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+
+          <article class="app-tile reveal" data-accent="paymentsuno" data-status="soon">
+            <div class="tile-media"><span class="tile-status soon"><span class="dot"></span>Early access</span><img
+                src="/assets/img/paymentsuno/1.webp" alt="" width="640" height="1286" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">🔊</span>
+                <div>
+                  <h3><a href="/apps/paymentsuno/">PaymentSuno</a></h3><span class="cat">Business · UPI
+                    soundbox</span>
+                </div>
+              </div>
+              <p>Turns your phone into a UPI soundbox that announces every Google Pay, PhonePe, Paytm and BHIM payment.
+              </p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="mailto:sagarrawatuk2@gmail.com?subject=PaymentSuno%20Early%20Access">Request early
+                  access</a><a class="link-arrow" href="/apps/paymentsuno/" tabindex="-1">Details <span
+                    aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+
+          <article class="app-tile reveal" data-accent="billone" data-status="soon">
+            <div class="tile-media"><span class="tile-status soon"><span class="dot"></span>Early access</span><img
+                src="/assets/img/billone/1.webp" alt="" width="640" height="960" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">🧾</span>
+                <div>
+                  <h3><a href="/apps/billone/">BillOne</a></h3><span class="cat">Business · GST invoicing</span>
+                </div>
+              </div>
+              <p>Offline-first GST invoicing and inventory for small businesses, with optional account sync.</p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="mailto:sagarrawatuk2@gmail.com?subject=BillOne%20Early%20Access">Request early access</a><a
+                  class="link-arrow" href="/apps/billone/" tabindex="-1">Details <span
+                    aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+
+          <article class="app-tile reveal" data-accent="ireject" data-status="soon">
+            <div class="tile-media"><span class="tile-status soon"><span class="dot"></span>Early access</span><img
+                src="/assets/img/ireject/1.webp" alt="" width="640" height="1138" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">💔</span>
+                <div>
+                  <h3><a href="/apps/ireject/">iReject</a></h3><span class="cat">Wellbeing · Recovery</span>
+                </div>
+              </div>
+              <p>Private breakup recovery with a no-contact streak, guided journey, journal and a reflective AI
+                listener.</p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="mailto:sagarrawatuk2@gmail.com?subject=iReject%20Early%20Access">Request early access</a><a
+                  class="link-arrow" href="/apps/ireject/" tabindex="-1">Details <span
+                    aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+
+          <article class="app-tile reveal" data-accent="breedly" data-status="soon">
+            <div class="tile-media"><span class="tile-status soon"><span class="dot"></span>Early access</span><img
+                src="/assets/img/breedly/1.webp" alt="" width="640" height="1349" loading="lazy"></div>
+            <div class="tile-body">
+              <div class="tile-head"><span class="app-glyph" aria-hidden="true">🐾</span>
+                <div>
+                  <h3><a href="/apps/breedly/">Breedly</a></h3><span class="cat">Pets · Matching</span>
+                </div>
+              </div>
+              <p>A trusted breeding network with transparent compatibility scoring and health-aware matching.</p>
+              <div class="tile-actions"><a class="btn btn-soft"
+                  href="mailto:sagarrawatuk2@gmail.com?subject=Breedly%20Early%20Access">Request early access</a><a
+                  class="link-arrow" href="/apps/breedly/" tabindex="-1">Details <span
+                    aria-hidden="true">→</span></a></div>
+            </div>
+          </article>
+          <article class="app-tile tile-next reveal">
+            <div class="tile-body">
+              <span class="app-glyph" aria-hidden="true">✦</span>
+              <h3>Next app in the works</h3>
+              <p>New ideas are always in progress. Want early access to what's next, or have an app idea?</p>
+              <div class="tile-actions"><a class="btn btn-soft" href="mailto:sagarrawatuk2@gmail.com?subject=Early%20Access%20to%20new%20MYX%20apps">Join early access</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Expertise ============ -->
+    <section class="section" id="expertise" aria-labelledby="exp-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Expertise</span>
+          <h2 id="exp-title">From first pixel to Play Store</h2>
+          <p>Design, engineering and launch — handled end to end, with the same care in every app.</p>
+        </div>
+
+        <div class="bento" data-stagger="0.06">
+          <div class="cell span-4 flutter reveal">
+            <div>
+              <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 3 4 13l3 3L20 3h-6ZM14 12l-4 4 4 4h6l-4-4 4-4h-6Z" />
+                </svg></div>
+              <h3>Flutter &amp; Dart, end to end</h3>
+              <p>Native-feeling Android apps from a single, well-structured codebase — clean architecture, predictable
+                state and animations tuned by hand.</p>
+              <div class="skill-list"><span>Flutter</span><span>Dart</span><span>Material 3</span><span>Android</span><span>Clean
+                  architecture</span><span>Local storage</span></div>
+            </div>
+            <div class="code-window" aria-hidden="true">
+              <div class="cw-bar"><i></i><i></i><i></i><span>lib/main.dart</span></div>
+              <pre><span class="k">class</span> <span class="t">MyxApp</span> <span class="k">extends</span> <span class="t">StatelessWidget</span> {
+  <span class="k">const</span> <span class="t">MyxApp</span>({<span class="k">super</span>.key});
+
+  <span class="c">// Private by default.</span>
+  <span class="k">@override</span>
+  <span class="t">Widget</span> build(<span class="t">BuildContext</span> context) {
+    <span class="k">return</span> <span class="t">MaterialApp</span>(
+      title: <span class="s">'MYX'</span>,
+      theme: <span class="t">MyxTheme</span>.light(),
+      home: <span class="k">const</span> <span class="t">HomeScreen</span>(),
+    );
+  }
+}<span class="caret"></span></pre>
+            </div>
           </div>
-          <div class="feature" style="background:none;border:none;padding:0">
-            <div class="f-icon">🎨</div>
-            <h3>Thoughtfully designed</h3>
-            <p>Clean, modern interfaces that feel great to use every day.</p>
+
+          <div class="cell reveal">
+            <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19l7-7 3 3-7 7-3-3Z" />
+                <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5Z" />
+                <path d="m2 2 7.59 7.59" />
+                <circle cx="11" cy="11" r="2" />
+              </svg></div>
+            <h3>Product &amp; UI design</h3>
+            <p>Every screen designed in-house — typography, motion and micro-interactions that make daily use a joy.</p>
+          </div>
+
+          <div class="cell reveal">
+            <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5" />
+                <path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+              </svg></div>
+            <h3>Offline-first architecture</h3>
+            <p>Local databases, instant load times and apps that keep working without a connection — with sync only
+              where it helps.</p>
+          </div>
+
+          <div class="cell reveal">
+            <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg></div>
+            <h3>Privacy engineering</h3>
+            <p>On-device processing wherever possible, only the permissions a feature needs, and a clear policy for
+              every app.</p>
+          </div>
+
+          <div class="cell reveal">
+            <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" />
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z" />
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              </svg></div>
+            <h3>Play Store launch</h3>
+            <p>Release builds, store listings, policy compliance and support pages — shipped and maintained, like this
+              site.</p>
+          </div>
+
+          <div class="cell span-3 reveal">
+            <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z" />
+              </svg></div>
+            <h3>Performance &amp; polish</h3>
+            <p>Lean builds, fast startup and careful attention to jank, battery use and accessibility — the details
+              users feel but rarely notice.</p>
+          </div>
+
+          <div class="cell span-3 reveal">
+            <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
+              </svg></div>
+            <h3>Built for India &amp; beyond</h3>
+            <p>Hindi and English interfaces in business apps, and Indian-language voices in PaymentSuno — designed for
+              the people who actually use them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Privacy ============ -->
+    <section class="section" id="privacy" aria-labelledby="privacy-title" style="padding-top:0">
+      <div class="container">
+        <div class="glass privacy-panel reveal">
+          <div>
+            <span class="eyebrow">Privacy</span>
+            <h2 id="privacy-title">Privacy isn't a feature. <span class="gradient-text">It's the foundation.</span>
+            </h2>
+            <p class="pp-intro">Every MYX app starts from the same question: what's the least data this needs to be
+              great?</p>
+            <ul class="principles">
+              <li><span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="5" y="2" width="14" height="20" rx="3" />
+                    <path d="M12 18h.01" />
+                  </svg></span><span><b>Local-first by default</b>Your habits, scans, payments and notes stay on your
+                  phone wherever possible.</span></li>
+              <li><span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="4" y="11" width="16" height="10" rx="2" />
+                    <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                  </svg></span><span><b>Minimal permissions</b>Apps ask only for what a feature needs to work — nothing
+                  more.</span></li>
+              <li><span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z" />
+                    <path d="M14 2v6h6M8 13h8M8 17h5" />
+                  </svg></span><span><b>Plain-language policies</b>Each app has its own clear policy covering exactly
+                  what's collected and why.</span></li>
+            </ul>
+          </div>
+          <div class="policy-list" data-stagger="0.05">
+            <h3>Privacy policies</h3>
+            <a class="policy-link reveal" data-accent="lifeone" href="/apps/lifeone/privacy.html"><span
+                class="pl-ico">🌱</span>LifeOne<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" data-accent="qrone" href="/apps/qrone/privacy.html"><span
+                class="pl-ico">📱</span>QRone<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" data-accent="remoteone" href="/apps/remoteone/privacy.html"><span
+                class="pl-ico">📺</span>RemoteOne<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" data-accent="paymentsuno" href="/apps/paymentsuno/privacy.html"><span
+                class="pl-ico">🔊</span>PaymentSuno<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" data-accent="billone" href="/apps/billone/privacy.html"><span
+                class="pl-ico">🧾</span>BillOne<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" data-accent="ireject" href="/apps/ireject/privacy.html"><span
+                class="pl-ico">💔</span>iReject<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" data-accent="breedly" href="/apps/breedly/privacy.html"><span
+                class="pl-ico">🐾</span>Breedly<span class="pl-arrow" aria-hidden="true">→</span></a>
+            <a class="policy-link reveal" href="/child-safety/"><span class="pl-ico">🛡️</span>Child safety
+              standards<span class="pl-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Testimonials ============ -->
+    <section class="section" id="testimonials" aria-labelledby="reviews-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2 id="reviews-title">Made for real people</h2>
+          <p>Reviews from Google Play users will be featured here.</p>
+        </div>
+
+        <!--
+          To feature a real review, uncomment this block and duplicate the <figure> (up to 3):
+          <div class="reviews" data-stagger="0.08">
+            <figure class="review reveal" data-accent="lifeone">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>“Review text copied from Google Play.”</blockquote>
+              <figcaption><span class="app-glyph" style="width:38px;height:38px;font-size:18px;border-radius:11px">🌱</span>
+                <span><b>Reviewer name</b>LifeOne · Google Play</span></figcaption>
+            </figure>
+          </div>
+        -->
+
+        <div class="review-cta reveal">
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <h3>Enjoying a MYX app?</h3>
+            <p>Reviews help independent apps get discovered. It takes 30 seconds and genuinely makes a difference.</p>
+          </div>
+          <div class="downloads">
+            <a class="btn btn-ghost" data-accent="lifeone"
+              href="https://play.google.com/store/apps/details?id=com.myx.lifeone" target="_blank" rel="noopener">🌱
+              Review LifeOne</a>
+            <a class="btn btn-ghost" data-accent="qrone"
+              href="https://play.google.com/store/apps/details?id=com.sagarrawat.qrone" target="_blank"
+              rel="noopener">📱 Review QRone</a>
+            <a class="btn btn-ghost" data-accent="remoteone"
+              href="https://play.google.com/store/apps/details?id=com.sagarrawat.remoteone" target="_blank"
+              rel="noopener">📺 Review RemoteOne</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title" style="padding-top:0">
+      <div class="container">
+        <div class="glass contact-card reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 id="contact-title">Let's build something <span class="gradient-text">people love.</span></h2>
+          <p>Questions about an app, a feature idea or a collaboration? I read every message and usually reply within
+            24–48 hours.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg magnetic" href="mailto:sagarrawatuk2@gmail.com">Email me <span
+                class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost btn-lg copy-email" href="mailto:sagarrawatuk2@gmail.com"
+              data-copy="sagarrawatuk2@gmail.com" aria-label="Copy email address sagarrawatuk2@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" />
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+              </svg>sagarrawatuk2@gmail.com<span class="copied" role="status">Copied!</span></a>
+          </div>
+          <div class="contact-meta">
+            <span>⏱ Replies within 24–48 hours</span>
+            <span>🛟 <a href="/support/" style="color:inherit">App support center</a></span>
+            <span>💻 <a href="https://github.com/sagarRawatUK" target="_blank" rel="noopener"
+                style="color:inherit">GitHub</a></span>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer id="site-footer"></footer>
   <script src="/assets/js/site.js" defer></script>
 </body>

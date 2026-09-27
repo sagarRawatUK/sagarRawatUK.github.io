@@ -10,7 +10,7 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/assets/myx_logo.png",
+      "src": "/assets/myx_logo_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"

@@ -99,6 +99,13 @@ body[data-app="billone"] {
   --accent-glow: rgba(38, 199, 180, .32);
 }
 
+body[data-app="paymentsuno"] {
+  --accent: #22b05a;
+  --accent-2: #6fd898;
+  --accent-soft: rgba(34, 176, 90, .16);
+  --accent-glow: rgba(34, 176, 90, .32);
+}
+
 * {
   margin: 0;
   padding: 0;

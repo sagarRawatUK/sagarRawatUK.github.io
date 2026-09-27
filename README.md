@@ -9,6 +9,7 @@ Official developer website for MYX.
 - Breedly
 - iReject
 - BillOne
+- PaymentSuno
 
 Hosted using GitHub Pages.
 

@@ -123,6 +123,7 @@
       '<a href="' + BASE + 'apps/breedly/">Breedly</a>' +
       '<a href="' + BASE + 'apps/ireject/">iReject</a>' +
       '<a href="' + BASE + 'apps/billone/">BillOne</a>' +
+      '<a href="' + BASE + 'apps/paymentsuno/">PaymentSuno</a>' +
       "</div>" +
       '<div class="footer-col"><h4>Company</h4>' +
       '<a href="' + BASE + 'apps/">All Apps</a>' +

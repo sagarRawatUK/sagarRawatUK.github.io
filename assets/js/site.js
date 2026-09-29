@@ -6,7 +6,7 @@
   "use strict";
 
   var BASE = "/"; // user site → repo root
-  var EMAIL = "sagarrawatuk2@gmail.com";
+  var EMAIL = "sagarrawatuk@gmail.com";
   var GITHUB = "https://github.com/sagarRawatUK";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

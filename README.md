@@ -14,4 +14,4 @@ Official developer website for MYX.
 
 Hosted using GitHub Pages.
 
-Contact: sagarrawatuk2@gmail.com
+Contact: sagarrawatuk@gmail.com

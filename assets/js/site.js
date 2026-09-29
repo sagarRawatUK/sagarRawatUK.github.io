@@ -36,7 +36,7 @@
 
   var APPS = [
     ["lifeone", "LifeOne"], ["qrone", "QRone"], ["remoteone", "RemoteOne"], ["paymentsuno", "PaymentSuno"],
-    ["billone", "BillOne"], ["ireject", "iReject"], ["breedly", "Breedly"]
+    ["nutrione", "NutriOne"], ["billone", "BillOne"], ["ireject", "iReject"], ["breedly", "Breedly"]
   ];
 
   var YEAR = document.documentElement.getAttribute("data-year") || String(new Date().getFullYear());

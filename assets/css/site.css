@@ -135,6 +135,15 @@ body[data-theme="light"] {
   --grad-end: #d6f5e2;
 }
 
+[data-app="nutrione"],
+[data-accent="nutrione"] {
+  --accent: #f76a45;
+  --accent-2: #fba474;
+  --accent-soft: rgba(247, 106, 69, .14);
+  --accent-glow: rgba(247, 106, 69, .32);
+  --grad-end: #feede6;
+}
+
 body[data-theme="light"] [data-accent],
 body[data-theme="light"][data-app] {
   --grad-end: #10141c;

@@ -38,18 +38,91 @@
   </div>
 </section>
 <section class="section-sm">
-  <div class="container">
-<div class="glass prose" style="padding:clamp(28px,4vw,48px)">
-    <p class="updated">Last updated: 2026</p>
-    <h2>Overview</h2><p>LifeOne is a local-first habit tracker. Your habits, streaks and progress are stored on your device. We do not require an account to use the app.</p>
-    <h2>Information we handle</h2><p>The app stores the habits you create and your check-in history locally. Optional reminders use your device's notification system.</p>
-    <h2>What we do not collect</h2><p>We do not sell your data and we do not use third-party advertising trackers.</p>
-    <h2>Google Play</h2><p>If you install via Google Play, standard Google Play services may collect diagnostic data as described in Google's own policies.</p>
-    <h2>Contact</h2><p>Questions about privacy? Email <a href="mailto:sagarrawatuk@gmail.com">sagarrawatuk@gmail.com</a>.</p>
-  </div>
-  </div>
-</section>
-</main>
+            <div class="container">
+                <div class="glass prose policy" style="padding:clamp(28px,4vw,44px);max-width:760px;margin-inline:auto">
+                    <p class="updated">Effective 29 September 2026 &middot; Sagar Singh (developer &ldquo;Myx&rdquo;)</p>
+                    <div class="policy-glance">
+                        <h2>At a glance</h2>
+                        <ul><li>You can use LifeOne as a guest. Your habits are then stored only on your phone.</li><li>If you create an account, your habits sync to the cloud so you can use them on other devices.</li><li>The free version shows Google AdMob ads, and the app sends usage events to Meta for app analytics.</li><li>Notes and photos on your habits are never sent to partners, analytics or the AI coach.</li></ul>
+                    </div>
+                    <nav class="policy-toc" aria-label="Contents"><ol><li><a href="#who-is-responsible">Who is responsible</a></li><li><a href="#information-stored-on-your-device">Information stored on your device</a></li><li><a href="#account-and-cloud-sync-optional">Account and cloud sync (optional)</a></li><li><a href="#accountability-partners-and-challenges">Accountability partners and challenges</a></li><li><a href="#ai-coach-optional">AI coach (optional)</a></li><li><a href="#analytics-meta-app-events">Analytics (Meta App Events)</a></li><li><a href="#advertising">Advertising</a></li><li><a href="#purchases">Purchases</a></li><li><a href="#app-configuration">App configuration</a></li><li><a href="#notifications-sharing-and-exports">Notifications, sharing and exports</a></li><li><a href="#service-providers">Service providers</a></li><li><a href="#how-long-data-is-kept-and-how-to-delete-it">How long data is kept and how to delete it</a></li><li><a href="#your-rights-and-choices">Your rights and choices</a></li><li><a href="#security">Security</a></li><li><a href="#children">Children</a></li><li><a href="#where-your-data-is-processed">Where your data is processed</a></li><li><a href="#changes-to-this-policy">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+                    <section id="who-is-responsible">
+                      <h2>1. Who is responsible</h2>
+                      <p>LifeOne is a habit and streak tracker. It is developed and published by <strong>Sagar Singh</strong>, an individual developer based in India, under the developer name <strong>&ldquo;Myx&rdquo;</strong>. LifeOne is not published by a company.</p><p>In this policy, &ldquo;I&rdquo;, &ldquo;me&rdquo; and &ldquo;my&rdquo; mean Sagar Singh. I decide how the information described here is used and I am responsible for it. Under India&rsquo;s Digital Personal Data Protection Act, 2023 I am the &ldquo;data fiduciary&rdquo;, and under the GDPR I am the &ldquo;data controller&rdquo;. I am also the grievance contact for LifeOne.</p>
+                    </section>
+                    <section id="information-stored-on-your-device">
+                      <h2>2. Information stored on your device</h2>
+                      <p>Your habits, routines, categories, completion history, streaks, notes, pledges, reminders and settings are stored in a local database on your phone. Photos you attach to a habit are saved in the app&rsquo;s private storage and are never uploaded.</p>
+                    </section>
+                    <section id="account-and-cloud-sync-optional">
+                      <h2>3. Account and cloud sync (optional)</h2>
+                      <p>You can sign up with email and password, Google or Apple. Accounts are handled by Firebase Authentication. With an account:</p><ul><li>your profile (name, email address and Premium status) is stored in Firebase Cloud Firestore;</li><li>a copy of your habit data is synced to Firestore so it can be restored on your other devices;</li><li>only your signed-in account can read your profile and synced habits.</li></ul>
+                    </section>
+                    <section id="accountability-partners-and-challenges">
+                      <h2>4. Accountability partners and challenges</h2>
+                      <p>These social features need an account and are used only if you join them.</p><ul><li><strong>Partners:</strong> after you share or redeem an invite code, your partners can see a daily snapshot with your display name, habit names, whether each is done today and your streaks. Notes are never included. Partners can send each other short nudges.</li><li><strong>Group challenges:</strong> other participants can see your display name and challenge progress.</li></ul><p>You can end a partnership or leave a challenge at any time.</p>
+                    </section>
+                    <section id="ai-coach-optional">
+                      <h2>5. AI coach (optional)</h2>
+                      <p>Insights on the Coach screen are calculated on your device. If you choose to paste your own Anthropic API key, LifeOne can also ask Claude for advice. It then sends aggregate habit statistics, such as completion rates and streak lengths, directly from your device to Anthropic under your key. Notes, photos, your email and account IDs are never included. Your key is stored only on your device.</p>
+                    </section>
+                    <section id="analytics-meta-app-events">
+                      <h2>6. Analytics (Meta App Events)</h2>
+                      <p>LifeOne uses the Meta (Facebook) SDK to measure app installs and how the app is used. It sends events such as onboarding completed, account created, habit created or completed, streak milestones, content shared, data exported and purchases (product and amount). These events include simple details such as habit type or streak length, never habit names or notes.</p><p>When you are signed in, your account ID is attached so events can be matched across devices. The SDK may also collect your device&rsquo;s advertising ID and device information. On iOS, access to the advertising identifier follows your App Tracking Transparency choice. You can reset or limit your advertising ID in your device settings.</p>
+                    </section>
+                    <section id="advertising">
+                      <h2>7. Advertising</h2>
+                      <p>The app shows Google AdMob banner ads and optional rewarded ads, for example to rescue a broken streak. AdMob may use your advertising ID, IP address and device information to show and measure ads.</p>
+                    </section>
+                    <section id="purchases">
+                      <h2>8. Purchases</h2>
+                      <p>Premium is sold through Google Play or the App Store and managed by RevenueCat, which receives an app user ID and the store&rsquo;s purchase receipt. Your Premium status is also saved to your profile. I never see your payment details.</p>
+                    </section>
+                    <section id="app-configuration">
+                      <h2>9. App configuration</h2>
+                      <p>Firebase Remote Config is used to show update prompts and change app settings, such as whether ads are shown, without a new release. It uses a Firebase installation ID and does not receive your habit data.</p>
+                    </section>
+                    <section id="notifications-sharing-and-exports">
+                      <h2>10. Notifications, sharing and exports</h2>
+                      <p>Reminders are scheduled locally on your device. When you share a streak card, or export your data as CSV, PDF or JSON, the file goes only to the app or place you choose.</p>
+                    </section>
+                    <section id="service-providers">
+                      <h2>11. Service providers</h2>
+                      <ul><li><strong><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase</a></strong>: authentication, cloud database (Firestore) and Remote Config, provided by Google.</li><li><strong><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a></strong>: advertising.</li><li><strong><a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta</a></strong>: app event analytics and install measurement.</li><li><strong><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat</a></strong>: subscription management.</li><li><strong><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic</a></strong>: AI coach answers, only if you add your own API key.</li><li><strong><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a></strong>: Google Play and Google Sign-In.</li><li><strong><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></strong>: App Store and Sign in with Apple.</li></ul><p>I do not sell your habit data. I may disclose information if the law requires it.</p>
+                    </section>
+                    <section id="how-long-data-is-kept-and-how-to-delete-it">
+                      <h2>12. How long data is kept and how to delete it</h2>
+                      <ul><li><strong>Local data:</strong> stays until you delete habits in the app, clear the app&rsquo;s storage or uninstall LifeOne.</li><li><strong>Account and cloud data:</strong> kept while your account exists. To delete your account and all cloud data, including your profile, synced habits, partner snapshots and challenge entries, <a href="mailto:sagarrawatuk@gmail.com?subject=LifeOne%20privacy">contact me</a> from the email address on your account. I will delete it within 30 days.</li><li><strong>Analytics and ad data:</strong> kept by Meta and Google under their own retention policies.</li></ul>
+                    </section>
+                    <section id="your-rights-and-choices">
+                      <h2>13. Your rights and choices</h2>
+                      <p>You can edit or delete habits, export your data (CSV, PDF, JSON), end partnerships and leave challenges inside the app.</p><p>Depending on where you live, you may also have the right to:</p><ul><li>access the personal data I hold about you and get a copy in a portable format;</li><li>correct information that is wrong or incomplete;</li><li>have your data erased;</li><li>restrict or object to certain processing;</li><li>withdraw consent where processing is based on consent;</li><li>nominate someone to exercise your rights if you die or become unable to (India).</li></ul><p>To make a request, <a href="mailto:sagarrawatuk@gmail.com?subject=LifeOne%20privacy">contact me</a>. I will reply within 30 days and may need to confirm that the data is yours first. If you are not satisfied with my answer, you can complain to the Data Protection Board of India or, in the EEA or UK, to your local data protection authority.</p>
+                    </section>
+                    <section id="security">
+                      <h2>14. Security</h2>
+                      <p>Cloud data is encrypted in transit and protected by Firestore security rules that limit each record to its owner or, for partner snapshots, to their partners. No system is completely secure, but if a breach affects your data I will notify you and the relevant authorities where the law requires.</p>
+                    </section>
+                    <section id="children">
+                      <h2>15. Children</h2>
+                      <p>LifeOne is not intended for anyone under 13. I do not knowingly collect personal information from anyone under 13. If you believe a child has provided information through LifeOne, <a href="mailto:sagarrawatuk@gmail.com?subject=LifeOne%20privacy">contact me</a> and I will delete it.</p>
+                    </section>
+                    <section id="where-your-data-is-processed">
+                      <h2>16. Where your data is processed</h2>
+                      <p>I am based in India. The service providers named above may store or process data in other countries, including the United States and the European Union. Where data leaves the EEA or UK, the transfer relies on safeguards such as the European Commission&rsquo;s Standard Contractual Clauses in the provider&rsquo;s terms.</p>
+                    </section>
+                    <section id="changes-to-this-policy">
+                      <h2>17. Changes to this policy</h2>
+                      <p>If I change this policy, I will update the date at the top of this page. For significant changes I will also let you know in LifeOne before they take effect.</p>
+                    </section>
+                    <section id="contact">
+                      <h2>18. Contact</h2>
+                      <p>For questions about this policy, data requests or complaints, <a href="mailto:sagarrawatuk@gmail.com?subject=LifeOne%20privacy">contact me by email</a>. I built the app, so I will answer your message myself.</p><p>Sagar Singh (developer &ldquo;Myx&rdquo;), India</p>
+                    </section>
+                    <p class="policy-cta"><a class="btn btn-primary" href="mailto:sagarrawatuk@gmail.com?subject=LifeOne%20privacy">Contact us</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
 <footer id="site-footer"></footer>
 <script src="/assets/js/site.js" defer></script>
 </body>

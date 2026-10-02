@@ -1344,6 +1344,66 @@ body[data-theme="light"] .link-arrow {
   margin-bottom: 30px;
 }
 
+.policy section {
+  scroll-margin-top: 96px;
+}
+
+.policy section h2 {
+  font-size: 22px;
+  margin: 36px 0 12px;
+}
+
+.policy strong {
+  color: var(--text);
+}
+
+.policy-glance {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 18px 22px;
+  margin-bottom: 28px;
+}
+
+.policy-glance h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.policy-glance ul {
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.policy-toc ol {
+  columns: 2;
+  column-gap: 32px;
+  margin: 0 0 8px;
+  padding-left: 22px;
+  color: var(--faint);
+  font-size: 15px;
+}
+
+.policy-toc li {
+  margin: 4px 0;
+  break-inside: avoid;
+}
+
+.policy-cta {
+  margin: 36px 0 0;
+}
+
+.policy-cta .btn-primary {
+  color: #fff;
+}
+
+@media (max-width: 560px) {
+  .policy-toc ol {
+    columns: 1;
+  }
+}
+
 /* ---------- CTA band ---------- */
 .cta-band {
   position: relative;

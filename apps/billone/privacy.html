@@ -44,14 +44,78 @@
         </section>
         <section class="section-sm">
             <div class="container">
-                <div class="glass" style="padding:clamp(28px,4vw,44px);max-width:760px;margin-inline:auto">
-                    <p>BillOne is designed around local-first business data handling. Invoices, stock records and
-                        customer data stay on the device by default, and cloud sync is opt-in and account-scoped.</p>
-                    <p style="margin-top:16px">We do not sell business data. Where cloud sync is enabled, access is
-                        restricted by the app's account model and privacy controls to support secure, scoped data
-                        sharing.</p>
-                    <p style="margin-top:16px;color:var(--muted)">For privacy questions, email
-                        <strong>sagarrawatuk@gmail.com</strong>.</p>
+                <div class="glass prose policy" style="padding:clamp(28px,4vw,44px);max-width:760px;margin-inline:auto">
+                    <p class="updated">Effective 29 September 2026 &middot; Sagar Singh (developer &ldquo;Myx&rdquo;)</p>
+                    <div class="policy-glance">
+                        <h2>At a glance</h2>
+                        <ul><li>Your business data is stored on your phone. It only leaves the device if you turn on Cloud Sync.</li><li>No account is needed. Cloud Sync is optional and runs only when you tap Sync.</li><li>The free version shows Google AdMob ads. BillOne Pro removes them.</li><li>I do not sell your data or read your invoices or customer lists.</li></ul>
+                    </div>
+                    <nav class="policy-toc" aria-label="Contents"><ol><li><a href="#who-is-responsible">Who is responsible</a></li><li><a href="#information-stored-on-your-device">Information stored on your device</a></li><li><a href="#cloud-sync-optional">Cloud Sync (optional)</a></li><li><a href="#purchases-billone-pro">Purchases (BillOne Pro)</a></li><li><a href="#advertising-free-version-only">Advertising (free version only)</a></li><li><a href="#what-i-do-not-collect">What I do not collect</a></li><li><a href="#sharing-invoices">Sharing invoices</a></li><li><a href="#service-providers">Service providers</a></li><li><a href="#how-long-data-is-kept">How long data is kept</a></li><li><a href="#deleting-your-data">Deleting your data</a></li><li><a href="#your-rights-and-choices">Your rights and choices</a></li><li><a href="#security">Security</a></li><li><a href="#children">Children</a></li><li><a href="#where-your-data-is-processed">Where your data is processed</a></li><li><a href="#changes-to-this-policy">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+                    <section id="who-is-responsible">
+                      <h2>1. Who is responsible</h2>
+                      <p>BillOne is an offline-first GST invoicing, billing and inventory app for small businesses. It is developed and published by <strong>Sagar Singh</strong>, an individual developer based in India, under the developer name <strong>&ldquo;Myx&rdquo;</strong>. BillOne is not published by a company.</p><p>In this policy, &ldquo;I&rdquo;, &ldquo;me&rdquo; and &ldquo;my&rdquo; mean Sagar Singh. I decide how the information described here is used and I am responsible for it. Under India&rsquo;s Digital Personal Data Protection Act, 2023 I am the &ldquo;data fiduciary&rdquo;, and under the GDPR I am the &ldquo;data controller&rdquo;. I am also the grievance contact for BillOne.</p>
+                    </section>
+                    <section id="information-stored-on-your-device">
+                      <h2>2. Information stored on your device</h2>
+                      <p>Everything you enter is saved in a local database on your phone:</p><ul><li>your business profile, including business name, address, GSTIN, PAN and bank details;</li><li>customers and suppliers you add, such as names, phone numbers, email addresses, addresses and GSTINs;</li><li>products, services, stock and stock movements;</li><li>invoices, payments, recurring subscriptions and reports.</li></ul><p>This data does not leave your device unless you use Cloud Sync, export it or share it. Files you import (for example Excel or CSV product lists) are read only on the device.</p>
+                    </section>
+                    <section id="cloud-sync-optional">
+                      <h2>3. Cloud Sync (optional)</h2>
+                      <p>If you create an account and use Cloud Sync, the records listed above are copied to a cloud database hosted by Supabase so you can back them up and use them on another device.</p><ul><li>Your account is an email address and password. Passwords are handled by Supabase Auth and are never visible to me.</li><li>Every synced record is tied to your account and protected by row-level security, so only you can read or change it.</li><li>Sync runs only when you tap <em>Sync</em>. Nothing is uploaded in the background.</li><li>You can sign out at any time, and your local data stays on the device.</li></ul>
+                    </section>
+                    <section id="purchases-billone-pro">
+                      <h2>4. Purchases (BillOne Pro)</h2>
+                      <p>Subscriptions and the one-time Pro purchase are sold through Google Play or the Apple App Store and managed by RevenueCat. RevenueCat receives an app user ID (anonymous, or your account ID once you sign in) and the store&rsquo;s purchase receipt so Pro can be restored on your other devices. I never receive your card or bank details.</p>
+                    </section>
+                    <section id="advertising-free-version-only">
+                      <h2>5. Advertising (free version only)</h2>
+                      <p>The free version shows ads from Google AdMob. AdMob may use your device&rsquo;s advertising ID, IP address and information about your device and app use to show and measure ads. Where the law requires it, BillOne asks for your consent first through Google&rsquo;s consent form, and on iOS through Apple&rsquo;s tracking prompt. Ads may be personalised or not, depending on your choice. BillOne Pro removes all ads, and the ad SDK makes no ad requests for Pro users.</p>
+                    </section>
+                    <section id="what-i-do-not-collect">
+                      <h2>6. What I do not collect</h2>
+                      <ul><li>Contacts, location, photos or messages.</li><li>Analytics or tracking beyond what AdMob does in the free version.</li></ul><p>I do not sell, rent or trade your data, and I do not use your invoices or customer lists for marketing.</p>
+                    </section>
+                    <section id="sharing-invoices">
+                      <h2>7. Sharing invoices</h2>
+                      <p>When you export or share an invoice or report (PDF, Excel or CSV), it goes to the app or person you choose through your device&rsquo;s share sheet. You are responsible for having permission to store and share your customers&rsquo; and suppliers&rsquo; details.</p>
+                    </section>
+                    <section id="service-providers">
+                      <h2>8. Service providers</h2>
+                      <ul><li><strong><a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a></strong>: database and authentication, only if you use Cloud Sync.</li><li><strong><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat</a></strong>: purchase management, only if you buy or restore Pro.</li><li><strong><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a></strong>: advertising, free version only.</li><li><strong><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a></strong>: Google Play: app distribution and payments.</li><li><strong><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a></strong>: App Store: app distribution and payments.</li></ul><p>I may also disclose information if the law requires it, for example because of a valid court order.</p>
+                    </section>
+                    <section id="how-long-data-is-kept">
+                      <h2>9. How long data is kept</h2>
+                      <ul><li>Local data stays on your device until you delete it or uninstall the app.</li><li>Cloud data stays until you delete your account.</li><li>Purchase records are kept by the app stores and RevenueCat as their policies and tax laws require.</li></ul>
+                    </section>
+                    <section id="deleting-your-data">
+                      <h2>10. Deleting your data</h2>
+                      <ul><li><strong>Cloud data:</strong> delete your account in <em>Cloud Sync &rarr; Delete account</em>. Your account and every synced record are permanently removed.</li><li><strong>Local data:</strong> uninstall the app or clear its storage in your device settings.</li><li><strong>Without the app:</strong> <a href="mailto:sagarrawatuk@gmail.com?subject=BillOne%20privacy">contact me</a> from the email address on your account and I will delete it.</li></ul>
+                    </section>
+                    <section id="your-rights-and-choices">
+                      <h2>11. Your rights and choices</h2>
+                      <p>You can view, edit, export (PDF, Excel, CSV) and delete your records inside the app.</p><p>Depending on where you live, you may also have the right to:</p><ul><li>access the personal data I hold about you and get a copy in a portable format;</li><li>correct information that is wrong or incomplete;</li><li>have your data erased;</li><li>restrict or object to certain processing;</li><li>withdraw consent where processing is based on consent;</li><li>nominate someone to exercise your rights if you die or become unable to (India).</li></ul><p>To make a request, <a href="mailto:sagarrawatuk@gmail.com?subject=BillOne%20privacy">contact me</a>. I will reply within 30 days and may need to confirm that the data is yours first. If you are not satisfied with my answer, you can complain to the Data Protection Board of India or, in the EEA or UK, to your local data protection authority.</p>
+                    </section>
+                    <section id="security">
+                      <h2>12. Security</h2>
+                      <p>Cloud data is encrypted in transit (TLS) and at rest by the hosting provider, and access is restricted to the signed-in account. Data on your phone is protected by your device&rsquo;s own security, such as its screen lock and encryption. No system is completely secure, but if a breach affects your data I will notify you and the relevant authorities where the law requires.</p>
+                    </section>
+                    <section id="children">
+                      <h2>13. Children</h2>
+                      <p>BillOne is not intended for anyone under 18 because it is a business tool. I do not knowingly collect personal information from anyone under 18. If you believe a child has provided information through BillOne, <a href="mailto:sagarrawatuk@gmail.com?subject=BillOne%20privacy">contact me</a> and I will delete it.</p>
+                    </section>
+                    <section id="where-your-data-is-processed">
+                      <h2>14. Where your data is processed</h2>
+                      <p>I am based in India. The service providers named above may store or process data in other countries, including the United States and the European Union. Where data leaves the EEA or UK, the transfer relies on safeguards such as the European Commission&rsquo;s Standard Contractual Clauses in the provider&rsquo;s terms.</p>
+                    </section>
+                    <section id="changes-to-this-policy">
+                      <h2>15. Changes to this policy</h2>
+                      <p>If I change this policy, I will update the date at the top of this page. For significant changes I will also let you know in BillOne before they take effect.</p>
+                    </section>
+                    <section id="contact">
+                      <h2>16. Contact</h2>
+                      <p>For questions about this policy, data requests or complaints, <a href="mailto:sagarrawatuk@gmail.com?subject=BillOne%20privacy">contact me by email</a>. I built the app, so I will answer your message myself.</p><p>Sagar Singh (developer &ldquo;Myx&rdquo;), India</p>
+                    </section>
+                    <p class="policy-cta"><a class="btn btn-primary" href="mailto:sagarrawatuk@gmail.com?subject=BillOne%20privacy">Contact us</a></p>
                 </div>
             </div>
         </section>

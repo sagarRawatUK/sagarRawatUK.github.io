@@ -44,23 +44,78 @@
         </section>
         <section class="section-sm">
             <div class="container">
-                <div class="glass" style="padding:clamp(28px,4vw,44px);max-width:760px;margin-inline:auto">
-                    <p>PaymentSuno processes payment notifications entirely on your device. Notification access is
-                        required so the app can detect incoming payment notifications from the payment apps you choose.
-                        It reads only what is needed to detect and announce a payment — the amount, payer name if shown,
-                        payment app and transaction ID.</p>
-                    <p style="margin-top:16px">Payment data stays on your device and is never uploaded to a server.
-                        Notification content is never collected for advertising or analytics, and payment details are
-                        never shared with advertisers. Logs never contain full transaction IDs, account numbers or other
-                        sensitive payment details.</p>
-                    <p style="margin-top:16px">PaymentSuno never reads UPI PINs, banking credentials, OTPs or passwords,
-                        and never initiates, approves or modifies any payment.</p>
-                    <p style="margin-top:16px">The free version shows ads served by Google AdMob, which may use your
-                        device's advertising ID and collect usage data to show and measure ads. Where required, you are
-                        asked for consent first and can change your choice at any time from Settings. Premium removes
-                        ads. Subscriptions are processed by Google Play and managed through RevenueCat.</p>
-                    <p style="margin-top:16px;color:var(--muted)">For privacy questions, email
-                        <strong>sagarrawatuk@gmail.com</strong>.</p>
+                <div class="glass prose policy" style="padding:clamp(28px,4vw,44px);max-width:760px;margin-inline:auto">
+                    <p class="updated">Effective 29 September 2026 &middot; Sagar Singh (developer &ldquo;Myx&rdquo;)</p>
+                    <div class="policy-glance">
+                        <h2>At a glance</h2>
+                        <ul><li>Payment notifications are read and announced on your device. Payment data is never uploaded.</li><li>There is no account. Your payment history is stored only on your phone.</li><li>PaymentSuno never reads UPI PINs, OTPs, passwords or banking credentials, and never makes or approves payments.</li><li>The free version shows Google AdMob ads. Premium removes them.</li></ul>
+                    </div>
+                    <nav class="policy-toc" aria-label="Contents"><ol><li><a href="#who-is-responsible">Who is responsible</a></li><li><a href="#notification-access">Notification access</a></li><li><a href="#information-stored-on-your-device">Information stored on your device</a></li><li><a href="#what-i-do-not-collect">What I do not collect</a></li><li><a href="#advertising-free-version">Advertising (free version)</a></li><li><a href="#purchases">Purchases</a></li><li><a href="#other-permissions">Other permissions</a></li><li><a href="#exports">Exports</a></li><li><a href="#service-providers">Service providers</a></li><li><a href="#how-long-data-is-kept-and-how-to-delete-it">How long data is kept and how to delete it</a></li><li><a href="#your-rights-and-choices">Your rights and choices</a></li><li><a href="#security">Security</a></li><li><a href="#children">Children</a></li><li><a href="#where-your-data-is-processed">Where your data is processed</a></li><li><a href="#changes-to-this-policy">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+                    <section id="who-is-responsible">
+                      <h2>1. Who is responsible</h2>
+                      <p>PaymentSuno is an Android app that announces incoming payments out loud, like a shop soundbox. It is developed and published by <strong>Sagar Singh</strong>, an individual developer based in India, under the developer name <strong>&ldquo;Myx&rdquo;</strong>. PaymentSuno is not published by a company.</p><p>In this policy, &ldquo;I&rdquo;, &ldquo;me&rdquo; and &ldquo;my&rdquo; mean Sagar Singh. I decide how the information described here is used and I am responsible for it. Under India&rsquo;s Digital Personal Data Protection Act, 2023 I am the &ldquo;data fiduciary&rdquo;, and under the GDPR I am the &ldquo;data controller&rdquo;. I am also the grievance contact for PaymentSuno.</p>
+                    </section>
+                    <section id="notification-access">
+                      <h2>2. Notification access</h2>
+                      <p>PaymentSuno needs Android&rsquo;s <em>Notification access</em> permission to detect payment notifications from the payment and banking apps you select, such as Google Pay, PhonePe and supported bank apps. From a payment notification it reads only what it needs to announce the payment: the amount, the payer name if shown, the payment app and the transaction ID. Notifications from other apps are ignored.</p><p>You can revoke notification access at any time in your device settings. Announcements will then stop.</p>
+                    </section>
+                    <section id="information-stored-on-your-device">
+                      <h2>3. Information stored on your device</h2>
+                      <ul><li>Your payment history (amount, payer name, payment app, transaction ID and time), stored in a local database.</li><li>Settings such as language, voice, selected payment apps and announcement preferences.</li></ul><p>Announcements are spoken by your device&rsquo;s text-to-speech engine. No audio is recorded or uploaded.</p>
+                    </section>
+                    <section id="what-i-do-not-collect">
+                      <h2>4. What I do not collect</h2>
+                      <ul><li>Payment data is never sent to a server, and I cannot see it.</li><li>UPI PINs, OTPs, passwords and banking credentials are never read.</li><li>Notification content is not used for advertising or analytics and is never shared with advertisers.</li><li>App logs never contain full transaction IDs, account numbers or other sensitive payment details.</li></ul>
+                    </section>
+                    <section id="advertising-free-version">
+                      <h2>5. Advertising (free version)</h2>
+                      <p>The free version shows ads from Google AdMob. AdMob may use your device&rsquo;s advertising ID, IP address and device information to show and measure ads. Where the law requires it, you are asked for consent first through Google&rsquo;s consent form, and you can change your choice later in <em>Settings</em>. Premium removes ads.</p>
+                    </section>
+                    <section id="purchases">
+                      <h2>6. Purchases</h2>
+                      <p>Premium is purchased through Google Play and managed by RevenueCat, which receives an anonymous app user ID and the purchase receipt. I never see your payment card details.</p>
+                    </section>
+                    <section id="other-permissions">
+                      <h2>7. Other permissions</h2>
+                      <ul><li><strong>Notifications:</strong> to show a status notification while announcements are running.</li><li><strong>Start at boot:</strong> to resume announcements after your phone restarts.</li><li><strong>Internet:</strong> only for ads and purchases.</li></ul>
+                    </section>
+                    <section id="exports">
+                      <h2>8. Exports</h2>
+                      <p>If you export your payment history as a CSV file, it is shared only with the app or person you choose.</p>
+                    </section>
+                    <section id="service-providers">
+                      <h2>9. Service providers</h2>
+                      <ul><li><strong><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a></strong>: advertising, free version only.</li><li><strong><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat</a></strong>: subscription management.</li><li><strong><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a></strong>: Google Play distribution and billing.</li></ul>
+                    </section>
+                    <section id="how-long-data-is-kept-and-how-to-delete-it">
+                      <h2>10. How long data is kept and how to delete it</h2>
+                      <p>Payment history stays on your device until you delete it in the app, clear the app&rsquo;s storage or uninstall PaymentSuno. Subscriptions can be managed or cancelled in your Google Play account.</p>
+                    </section>
+                    <section id="your-rights-and-choices">
+                      <h2>11. Your rights and choices</h2>
+                      <p>Because your data is stored only on your device, you can view, export and delete it directly in the app, and turn off notification access at any time.</p><p>Depending on where you live, you may also have the right to:</p><ul><li>access the personal data I hold about you and get a copy in a portable format;</li><li>correct information that is wrong or incomplete;</li><li>have your data erased;</li><li>restrict or object to certain processing;</li><li>withdraw consent where processing is based on consent;</li><li>nominate someone to exercise your rights if you die or become unable to (India).</li></ul><p>To make a request, <a href="mailto:sagarrawatuk@gmail.com?subject=PaymentSuno%20privacy">contact me</a>. I will reply within 30 days and may need to confirm that the data is yours first. If you are not satisfied with my answer, you can complain to the Data Protection Board of India or, in the EEA or UK, to your local data protection authority.</p>
+                    </section>
+                    <section id="security">
+                      <h2>12. Security</h2>
+                      <p>Payment data never leaves your device and is stored in the app&rsquo;s private storage, protected by your device&rsquo;s security. No system is completely secure, but if a breach affects your data I will notify you and the relevant authorities where the law requires.</p>
+                    </section>
+                    <section id="children">
+                      <h2>13. Children</h2>
+                      <p>PaymentSuno is not intended for anyone under 13. I do not knowingly collect personal information from anyone under 13. If you believe a child has provided information through PaymentSuno, <a href="mailto:sagarrawatuk@gmail.com?subject=PaymentSuno%20privacy">contact me</a> and I will delete it.</p>
+                    </section>
+                    <section id="where-your-data-is-processed">
+                      <h2>14. Where your data is processed</h2>
+                      <p>I am based in India. The service providers named above may store or process data in other countries, including the United States and the European Union. Where data leaves the EEA or UK, the transfer relies on safeguards such as the European Commission&rsquo;s Standard Contractual Clauses in the provider&rsquo;s terms.</p>
+                    </section>
+                    <section id="changes-to-this-policy">
+                      <h2>15. Changes to this policy</h2>
+                      <p>If I change this policy, I will update the date at the top of this page. For significant changes I will also let you know in PaymentSuno before they take effect.</p>
+                    </section>
+                    <section id="contact">
+                      <h2>16. Contact</h2>
+                      <p>For questions about this policy, data requests or complaints, <a href="mailto:sagarrawatuk@gmail.com?subject=PaymentSuno%20privacy">contact me by email</a>. I built the app, so I will answer your message myself.</p><p>Sagar Singh (developer &ldquo;Myx&rdquo;), India</p>
+                    </section>
+                    <p class="policy-cta"><a class="btn btn-primary" href="mailto:sagarrawatuk@gmail.com?subject=PaymentSuno%20privacy">Contact us</a></p>
                 </div>
             </div>
         </section>

@@ -28,6 +28,7 @@
 
   var NAV = [
     { label: "Apps", href: BASE + "apps/" },
+    { label: "Blog", href: BASE + "blog/" },
     { label: "Expertise", href: BASE + "#expertise" },
     { label: "Privacy", href: BASE + "privacy/" },
     { label: "Support", href: BASE + "support/" },
@@ -164,6 +165,7 @@
       '<div class="footer-col"><h4>Apps</h4>' + appLinks + "</div>" +
       '<div class="footer-col"><h4>Explore</h4>' +
       '<a href="' + BASE + 'apps/">All apps</a>' +
+      '<a href="' + BASE + 'blog/">Blog</a>' +
       '<a href="' + BASE + '#expertise">Expertise</a>' +
       '<a href="' + BASE + 'support/">Support</a>' +
       '<a href="' + BASE + '#contact">Contact</a>' +

@@ -1,0 +1,40 @@
+# MYX
+
+> MYX is the independent app studio of Flutter developer Sagar Rawat. It builds simple, privacy-first Android apps for habits, utilities, business and wellbeing, designed for India and beyond, with Hindi and English interfaces in the business apps. Most apps keep data on the device and work offline.
+
+All MYX apps are free to download on Google Play. Each app has its own page with an FAQ, changelog, support details and privacy policy. For support or collaboration, email sagarrawatuk@gmail.com.
+
+## Apps
+
+- [PaymentSuno](https://myxapps.in/apps/paymentsuno/): Turns a phone into a UPI soundbox that reads out every payment received from Google Pay, PhonePe, Paytm, BHIM and bank apps.
+- [NutriOne](https://myxapps.in/apps/nutrione/): AI-powered calorie and nutrition tracker. Photograph a meal to estimate calories and macros, scan barcodes, track weight and cook healthy recipes.
+- [BillOne](https://myxapps.in/apps/billone/): Offline-first GST invoicing and inventory for small businesses, with local SQLite storage, support for several businesses and optional cloud sync.
+- [LifeOne](https://myxapps.in/apps/lifeone/): Daily habit tracker with streaks, streak freezes and milestones.
+- [QRone](https://myxapps.in/apps/qrone/): Fast QR and barcode scanner and QR generator with scan history. Runs fully on the device and offline.
+- [RemoteOne](https://myxapps.in/apps/remoteone/): Smart TV remote that works over Wi-Fi, with a touchpad and quick device discovery. No extra hardware or internet needed.
+- [iReject](https://myxapps.in/apps/ireject/): Private breakup-recovery app with a no-contact streak, guided journey, journal, anchors and a supportive AI listener.
+- [Breedly](https://myxapps.in/apps/breedly/) (coming soon): Pet matchmaking for responsible owners, with transparent compatibility scoring, health checks and safe breeding workflows.
+
+## Comparisons
+
+- [Blog](https://myxapps.in/blog/): Honest comparisons of each MYX app with a popular alternative, including when the other app is the better choice.
+- [LifeOne vs Habitica](https://myxapps.in/blog/habitica-alternative/): Streak-based habit tracking without the role-playing game, account or ads.
+- [QRone vs Google Lens](https://myxapps.in/blog/google-lens-qr-scanner-alternative/): A dedicated scanner that also creates QR codes and keeps a searchable history.
+- [RemoteOne vs SmartThings](https://myxapps.in/blog/smartthings-remote-alternative/): One TV remote app for Samsung, LG, Roku and Android TV, with no sign-in.
+- [PaymentSuno vs Paytm Soundbox](https://myxapps.in/blog/paytm-soundbox-alternative/): A phone-based UPI soundbox with no device or monthly rental.
+- [NutriOne vs Cal AI](https://myxapps.in/blog/cal-ai-alternative/): AI calorie tracking with free daily photo scans.
+- [BillOne vs Vyapar](https://myxapps.in/blog/vyapar-alternative/): Phone-first, offline-first GST billing and inventory for small shops.
+- [iReject vs Mend](https://myxapps.in/blog/mend-alternative/): A private no-contact tracker with an SOS for urges, compared with a guided heartbreak course.
+- [Breedly vs Facebook groups](https://myxapps.in/blog/facebook-breeding-groups-alternative/): Health-aware breeding matches with compatibility scores and blocks on unsafe pairings.
+
+## Support and policies
+
+- [All apps](https://myxapps.in/apps/): Overview of every MYX app.
+- [Support](https://myxapps.in/support/): Help for any MYX app and how to contact the developer.
+- [Privacy policies](https://myxapps.in/privacy/): The privacy policy for each app.
+- [Child safety standards](https://myxapps.in/child-safety/): Breedly's standards for preventing and responding to child sexual abuse and exploitation.
+
+## Optional
+
+- [Developer on GitHub](https://github.com/sagarRawatUK): Sagar Rawat's GitHub profile.
+- [Sitemap](https://myxapps.in/sitemap.xml): Every public page on the site.

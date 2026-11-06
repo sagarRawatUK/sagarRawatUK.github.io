@@ -156,7 +156,7 @@
       '<div class="footer-grid">' +
       '<div class="footer-brand">' +
       '<a class="brand" href="' + BASE + '"><img src="' + BASE + 'assets/img/myx-logo.webp" alt="" width="32" height="32"><span class="wordmark">MY<span>X</span></span></a>' +
-      "<p>Independent Flutter studio by Sagar Rawat. Beautifully simple, privacy-first apps for Android.</p>" +
+      "<p>Independent Flutter studio by Sagar Singh. Beautifully simple, privacy-first apps for Android.</p>" +
       '<div class="socials">' +
       '<a href="' + GITHUB + '" target="_blank" rel="noopener" aria-label="GitHub">' + ICON.github + "</a>" +
       '<a href="mailto:' + EMAIL + '" aria-label="Email">' + ICON.mail + "</a>" +
@@ -178,7 +178,7 @@
       "</div>" +
       "</div>" +
       '<div class="footer-bottom">' +
-      "<span>© " + YEAR + ' MYX · <span class="made-with">Designed &amp; built by Sagar Rawat</span></span>' +
+      "<span>© " + YEAR + ' MYX · <span class="made-with">Designed &amp; built by Sagar Singh</span></span>' +
       '<button class="to-top" type="button">Back to top ' + ICON.up + "</button>" +
       "</div>" +
       "</div>" +

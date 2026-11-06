@@ -1,6 +1,6 @@
 # MYX
 
-> MYX is the independent app studio of Flutter developer Sagar Rawat. It builds simple, privacy-first Android apps for habits, utilities, business and wellbeing, designed for India and beyond, with Hindi and English interfaces in the business apps. Most apps keep data on the device and work offline.
+> MYX is the independent app studio of Flutter developer Sagar Singh. It builds simple, privacy-first Android apps for habits, utilities, business and wellbeing, designed for India and beyond, with Hindi and English interfaces in the business apps. Most apps keep data on the device and work offline.
 
 All MYX apps are free to download on Google Play. Each app has its own page with an FAQ, changelog, support details, privacy policy and terms of service. For support or collaboration, email sagarrawatuk@gmail.com.
 
@@ -37,5 +37,5 @@ All MYX apps are free to download on Google Play. Each app has its own page with
 
 ## Optional
 
-- [Developer on GitHub](https://github.com/sagarRawatUK): Sagar Rawat's GitHub profile.
+- [Developer on GitHub](https://github.com/sagarRawatUK): Sagar Singh's GitHub profile.
 - [Sitemap](https://myxapps.in/sitemap.xml): Every public page on the site.

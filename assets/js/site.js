@@ -172,6 +172,7 @@
       "</div>" +
       '<div class="footer-col"><h4>Legal</h4>' +
       '<a href="' + BASE + 'privacy/">Privacy policies</a>' +
+      '<a href="' + BASE + 'terms/">Terms of service</a>' +
       '<a href="' + BASE + 'child-safety/">Child safety</a>' +
       '<a href="mailto:' + EMAIL + '">' + EMAIL + "</a>" +
       "</div>" +
